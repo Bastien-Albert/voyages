@@ -6,6 +6,7 @@
     <title>Voyages</title>
     <link rel="shortcut icon" href="earth.ico">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="styles/js/AllItemVoyages.js"></script>
     <link rel="stylesheet" href="styles/css/fa.css">
     <link rel="stylesheet" href="styles/css/voyages.css">
 </head>
@@ -37,14 +38,6 @@
         </nav>
     </header>
     <main>
-<!--        <div class="block-slide">-->
-<!--            <div class="image-slide">-->
-<!--                <img src="styles/images/Allemagne.jpg" alt="">-->
-<!--            </div>-->
-<!--            <div class="description-slide">-->
-<!--                test-->
-<!--            </div>-->
-<!--        </div>-->
         <div class="selector">
             <div class="select">
                 <div class="select-continent">
@@ -53,7 +46,9 @@
                         <h3>Prénoms</h3>
                         <div class="list-item">
                             <li class="name" data-id="Bastien">Bastien</li>
-                            <li class="name" data-id="Keke">Keke</li>
+                            <li class="name" data-id="Kevin">Kévin</li>
+                            <li class="name" data-id="Celine">Céline</li>
+                            <li class="all-item" >Toute categorie</li>
                         </div>
                     </div>
                 </div>
@@ -66,92 +61,5 @@
         Copyright© by KBC Nueve
     </footer>
 </body>
-<script>
-    var voyages = [{
-        "Bastien" : [{
-            'etats_unis' : [{
-                'title' : 'États-Unis (Amérique)',
-                'description' : 'Pays regroupant plus de 50 états situés en Amérique du Nord. Ce pays est le pays le peuplé en Amérique avec 330 millions d’habitants.  La capitale est Washington D.C (District of Columbia), la langue officielle est l’anglais. La monnaie est le dollar américain. L’hymne nationale est The Star-Spangled Banner. Les États-Unis sont une puissance majeure dans le domaine de la culture (soft power), de l’armement (avec une l’une des armées les plus puissantes au monde), de l’industrie (pionnière dans certains domaines avec le Taylorisme ou le Fordisme).',
-                'img' : 'styles/images/Etats-Unis.jpg'
-            }],
-            'Angleterre' : [{
-                'title' : 'testr',
-                'description' : 'Nation constitutive constitué du Royaume-Uni, ayant une population de 55 millions d’habitants. La capitale est Londres, la langue officielle est l’anglais. La monnaie est le livre sterling. L’hymne nationale est God Save the Queen.',
-                'img' : 'styles/images/Angleterre.jpg'
-            }]
-        }],
-        "Keke" : [{
-            'Cuba' : [{
-                'title' : 'Cuba',
-                'description' : 'Cuba est un État insulaire des Caraïbes formé de l\'île de Cuba (la plus grande île des Antilles), de l\'île de la Jeunesse et de 4 095 cayes et Îlots. Sa capitale est La Havane, sa langue officielle l\'espagnol et deux monnaies y sont utilisées : le peso cubain et le peso cubain convertible. L\'île a été une colonie espagnole de 1492 à 1898 puis un territoire des États-Unis jusqu\'au 20 mai 1902.',
-                'img' : 'styles/images/Cuba.jpg'
-            }],
-            'Indonesie' : [{
-                'title' : 'Indonésie',
-                'description' : 'L’Indonésie est un pays situé en Asie du Sud-Est. Avec 13 466 îles, dont 922 habitées, il s\'agit du plus grand archipel au monde. Avec une population estimée à 265 millions de personnes, c\'est le quatrième pays le plus peuplé au monde. ',
-                'img' : 'styles/images/Indonesie.jpg'
-            }]
-        }]
-    }];
-</script>
-<script type="text/javascript" src="styles/js/voyagegene.js"></script>
-<script>
-    function htmlRender(voyage){
-        return "<div class=\"block-item\">\n" +
-            "                <div class=\"block-cat-image\">\n" +
-            "                    <h4>" + voyage.title + "</h4>\n" +
-            "                    <img src=\"" + voyage.img +"\" alt=\"\">\n" +
-            "                </div>\n" +
-            "                <div class=\"block-cat-description\">\n" +
-            "                    <p>" + voyage.description +"</p>\n" +
-            "                </div>\n" +
-            "            </div>";
-    }
-    function existMenu($parent){
-        $parent.find('.select-content').animate({
-            opacity: 0,
-        }, 100).queue(function (next) {
-            $(this).closest('.select-continent').removeClass('menu-active');
-            next();
-        });
-    }
-    $(document).ready(function() {
-        $('.select-title span').click(function() {
-            $parent = $(this).closest('.select-continent');
-            if($parent.hasClass('menu-active'))
-            {
-                existMenu($parent);
-            }
-            else
-            {
-                $parent.addClass('menu-active').find('.select-content').animate({
-                    opacity: 1,
-                }, 100);
-            }
-        });
-        $('body').click(function(e) {
-            $div =  $(this).find('.select-continent');
-            console.log();
-            if(!$(e.target).is($div) && !$.contains($div[0],e.target))
-            {
-                existMenu($parent);
-            }
-        });
-
-        $('.name').click(function() {
-            $data = $(this).data("id");
-            $parent = $('body');
-            $foreach = voyages;
-            $ouput = "";
-            $.each($foreach, function(arrayKey, array) {
-                $.each(array[$data], function(key, value) {
-                    $.each(value, function(i, value1) {
-                        $ouput += htmlRender(value1[0]);
-                    });
-                });
-            });
-            $parent.find('.block-cat').html($ouput);
-        });
-    });
-</script>
+<script>allItem();</script>
 </html>
