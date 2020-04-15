@@ -115,6 +115,168 @@ nav .menu-deroulant a {
     text-align: end;
 
 }
+.hamburger-menu{
+    font-size: 48px;
+    color: white;
+    transition: all 0.3s;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.hamburger-menu:hover{
+    opacity: 0.5;
+}
+/*canvas manu*/
+.toggle-menu, .category{
+    cursor: pointer;
+}
+.toggle-menu {
+    cursor: pointer;
+}
+
+.CanvasMenu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000000;
+    display: none;
+}
+
+.CanvasMenu.active {
+    display: block;
+}
+
+.menu-nav-right {
+    display: none;
+    position: relative;
+    right: -100%;
+    background: var(--color-hamburger-menu);
+    top: 0;
+    bottom: 0;
+    left: -70%;
+    width: 280px;
+    max-width: 85%;
+    font-family: 'FiraSans', "Trebuchet MS", Helvetica, sans-serif;
+    color: white;
+    height: 100%;
+    overflow: auto;
+}
+
+.menu-nav-right a {
+    color: white;
+    font-size: 17px;
+}
+
+.menu-nav-left {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.CanvasMenu-header {
+    background: rgba(20, 20, 20, 0.15);
+    border-bottom: var(--border-hamburger-menu);
+    padding: 10px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.CanvasMenu-header .CanvasMenu-close {
+    float: right;
+    cursor: pointer;
+}
+
+.CanvasMenu-header .CanvasMenu-close:before {
+    content: '\f00d';
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 400;
+}
+
+.CanvasMenu-nav {
+    padding: 10px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom: var(--border-hamburger-menu);
+}
+.CanvasMenu-cat .CanvasMenu-all-item, .CanvasMenu-child-all-item{
+    display: none;
+    background: rgba(20, 20, 20, 0.15);
+    padding-bottom: 25px;
+    padding-left: 20px;
+}
+.CanvasMenu-nav.is-select {
+    background-color: white;
+}
+
+.CanvasMenu-nav.is-select a {
+    color: var(--color-hamburger-menu);
+    font-weight: 700;
+    font-size: 17px;
+}
+.CanvasMenu-open, .CanvasMenu-open-child{
+    float: right;
+    position: relative;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.CanvasMenu-open:before, .CanvasMenu-open-child:before {
+    border-left-color: rgba(25,30,30,0.16);
+}
+.CanvasMenu-open:before,  .CanvasMenu-open-child:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    bottom: 3px;
+    width: 0;
+    border-left: 1px solid currentColor;
+}
+.CanvasMenu-open:after,  .CanvasMenu-open-child:after{
+    font-family: "Font Awesome 5 Pro";
+    content: "\f107";
+}
+.CanvasMenu-cat.active .CanvasMenu-open:after, .CanvasMenu-child.active  .CanvasMenu-open-child:after{
+    font-family: "Font Awesome 5 Pro";
+    content: "\f106";
+}
+.CanvasMenu-nav.CanvasMenu-cat{
+    padding: 0;
+}
+.CanvasMenu-titre{
+    padding: 10px;
+}
+.CanvasMenu-item a{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    display: block;
+}
+.CanvasMenu-nav.CanvasMenu-cat.is-select{
+    background-color: initial;
+}
+.CanvasMenu-nav.CanvasMenu-cat.is-select .CanvasMenu-titre{
+    background-color: #FFFFFF;
+    color: var(--color-hamburger-menu);
+    font-weight: 700;
+    font-size: 17px;
+}
+.CanvasMenu-nav.CanvasMenu-cat.is-select a{
+    color: white;
+    font-weight: initial;
+    font-size: initial;
+}
 /*main*/
 main {
     padding: 10px 20px;
@@ -255,6 +417,30 @@ footer{
 
 @media screen and (max-width: 950px)
 {
+    .block-inner .block-audio{
+        padding-right: 0!important;
+    }
+    .block-audio {
+        width: 100%;
+    }
+    .block-inner{
+        padding: 10px;
+    }
+    .logo{
+        display: none;
+    }
+    .respon {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    .link{
+        display: none;
+    }
+    .logo-respon img{
+        max-width: 65px;
+        width: 100%;
+    }
     .block-item{
         flex-direction: column;
     }

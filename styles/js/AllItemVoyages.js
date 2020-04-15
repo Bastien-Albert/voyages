@@ -65,7 +65,7 @@ function htmlRender(voyage){
     return "<div class=\"block-item\">\n" +
         "      <div class=\"block-cat-image\">\n" +
         "         <h4>" + voyage.title + "</h4>\n" +
-        "         <img src=\"" + voyage.img +"\" alt=\"\">\n" +
+        "         <img src=\"" + voyage.img +"\" alt=\"photo "+ voyage.title +"\">\n" +
         "      </div>\n" +
         "      <div class=\"block-cat-description\">\n" +
         "         <p>" + voyage.description +"</p>\n" +
@@ -98,9 +98,11 @@ $(document).ready(function() {
     $('.select-title span').click(function() {
         $parent = $(this).closest('.block-item-cat-list');
         $type = $parent.data("type");
+        console.log($type);
         if($type === "name")
         {
             $parentContent = $("#continent");
+            console.log($parentContent);
             existMenu($parentContent);
         }
         else
