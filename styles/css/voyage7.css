@@ -3,23 +3,53 @@
   padding: 0;
 }
 .body-islande{
-  background-image: url("../images/auroreboreale.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(to top, black, #093C35, #3FB022);
 }
 .main-islande{
   max-width: 1400px;
   border: 1px solid black;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
 }
 .photo-pays-islande{
   background-image: url("../images/Islande.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height:70vh;
-  display: grid;
+  font-size: 50px;
+  animation-name: fadeInDown;
+  animation-duration: 0.7s;
+}
+.photo-pays-islande p{
+  color: #093C35;
+  opacity: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 50px;
+  background: linear-gradient(to top, rgba(255,255,255,1), rgba(0,0,0,0));
+  transition: all 0.3s;
+}
+.photo-pays-islande:hover p{
+  opacity: 1;
+}
+
+/*ANIMATIONS*/
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
