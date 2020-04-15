@@ -1,0 +1,25 @@
+.html-islande, .body-islande{
+  margin:0;
+  padding: 0;
+}
+.body-islande{
+  background-image: url("../images/auroreboreale.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-islande{
+  max-width: 1400px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+.photo-pays-islande{
+  background-image: url("../images/Islande.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:70vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 50px;
+}
