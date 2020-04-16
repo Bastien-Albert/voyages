@@ -372,8 +372,6 @@ main {
     height: 100%;
     background-image: url("../images/cuba-top.jpg");
     background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
-    /*background-size:cover ;*/
 }
 
 .top-block{
@@ -623,7 +621,10 @@ footer{
 
     }
     .block-image{
-        background: url("../styles/images/flagofcuba.png");
+        background: url("../images/flagofcuba.png");
+        overflow: hidden;
+        max-width: 100%;
+        height: 100%;
     }
 
 
