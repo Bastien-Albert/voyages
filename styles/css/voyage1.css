@@ -622,6 +622,9 @@ footer{
         text-align: center;
 
     }
+    .block-image{
+        background: url("../styles/images/flagofcuba.png");
+    }
 
 
 }
