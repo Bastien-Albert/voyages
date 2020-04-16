@@ -352,8 +352,182 @@ nav .link a.toggle-menu-deroulant{
     font-weight: initial;
     font-size: initial;
 }
-/*main*/
 
+/*main*/
+main {
+    padding: 10px 20px;
+}
+.select {
+    max-width: var(--var-max-width);
+    margin: auto;
+    padding-bottom: 10px;
+}
+.select-continent{
+    background: var(--color-filter);
+    position: relative;
+    padding: 5px;
+}
+.select-title span{
+    cursor: pointer;
+}
+.block-item-cat-list{
+    max-width: 300px;
+    margin: auto;
+}
+.select-title span:after {
+    font-family: 'Font Awesome 5 Pro';
+    font-size: inherit;
+    font-style: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f0d7";
+    font-weight: 900;
+    margin-left: .2em;
+    unicode-bidi: isolate;
+}
+.select-continent .select-title{
+    text-align: center;
+}
+.select-continent h3{
+    margin: 0;
+    background: var(--color-filter);
+    text-align: center;
+}
+.select-content {
+    position: absolute;
+    z-index: 10;
+    background: white;
+    max-width: 300px;
+    width: 100%;
+    border-top: solid var(--var-color);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.35);
+}
+
+.select-content{
+    display: none;
+}
+.menu-active .select-content{
+    display: block;
+    opacity: 0;
+}
+.selector {
+    display: none;
+    position: sticky;
+    top: 73px;
+}
+.list-item {
+    margin: 10px;
+}
+.select-content:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -8px;
+    right: 50%;
+    margin-left: -8px;
+    border: 8px solid transparent;
+    border-top-width: 0;
+    border-bottom-color: #47a7eb;
+}
+.background-title{
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: var(--var-max-width);
+    margin: 50px auto;
+    max-height: 173px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow-one);
+    color: white;
+}
+.background-title{
+    background-image: url(../images/banner_etats_unis.jpg);
+}
+.height{
+    padding: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: var(--var-max-width);
+    margin: auto;
+}
+.page-title {
+    text-align: center;
+}
+.block-body-inner {
+    max-width: var(--var-max-width);
+    margin: 0 auto;
+}
+.block-body-main {
+    display: flex;
+    align-items: flex-start;
+}
+.content{
+    padding-left: 15px;
+    flex: 0 1 auto;
+    display: block;
+    width: calc(100% - 300px);
+}
+.sidebar{
+    width: 300px;
+    position: sticky;
+    top: 90px;
+}
+.first-block {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px #dfdfdf;
+}
+.sidebar-container {
+    background: white;
+    border: solid 1px #dfdfdf;
+    border-radius: 5px;
+}
+.block-minorHeader {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border-bottom: dashed  1px #dfdfdf;
+}
+
+.block-chose{
+    margin-top: 10px;
+    background: white;
+    border: solid 1px #dfdfdf;
+    border-radius: 5px;
+    text-align: center;
+}
+.name-chose h3 {
+    margin: 0;
+    padding: 10px;
+    border-bottom: dashed  1px #dfdfdf;
+}
+.content-chose {
+    display: none;
+    padding: 10px;
+}
+.open-chose {
+    float: right;
+    margin-left: 5px;
+}
+.open-chose:before {
+    font-family: 'Font Awesome 5 Pro';
+    font-style: normal;
+    font-weight: 900;
+    content: "\f0da";
+    font-size: 100%;
+}
+.active .open-chose:before {
+    content: "\f0d7";
+}
+.content-chose img {
+    max-width: 500px;
+    width: 100%;
+}
 /*footer*/
 footer{
     background-color:var(--color-one);
@@ -367,15 +541,6 @@ footer{
 
 @media screen and (max-width: 950px)
 {
-    .block-inner .block-audio{
-        padding-right: 0!important;
-    }
-    .block-audio {
-        width: 100%;
-    }
-    .block-inner{
-        padding: 10px;
-    }
     .logo{
         display: none;
     }
@@ -391,4 +556,15 @@ footer{
         max-width: 65px;
         width: 100%;
     }
+    .sidebar{
+        display: none;
+    }
+    .content {
+        width: 100%;
+        padding: 0;
+    }
+    .selector{
+        display: block;
+    }
 }
+
