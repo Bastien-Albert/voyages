@@ -2,11 +2,13 @@
   margin:0;
   padding: 0;
 }
+.h3_islande{
+  border: 1px solid black;
+}
 .body-islande{
-  background: linear-gradient(to top, black, #093C35, #3FB022);
+  background:#;
 }
 .main-islande{
-  max-width: 1400px;
   border: 1px solid black;
   margin: 0 auto;
   display: flex;
@@ -14,42 +16,84 @@
   background-color: white;
 }
 .photo-pays-islande{
-  background-image: url("../images/Islande.jpg");
+  background-image: url("../images/auroreboreale.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height:70vh;
+  height:50vh;
   font-size: 50px;
-  animation-name: fadeInDown;
-  animation-duration: 0.7s;
+  background-position:bottom;
+  background-attachment: fixed;
 }
 .photo-pays-islande p{
-  color: #093C35;
-  opacity: 0;
+  color: white;
   margin: 0;
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to top, rgba(255,255,255,1), rgba(0,0,0,0));
-  transition: all 0.3s;
+  background: linear-gradient(0deg,rgba(18,18,23,.6) 0,rgba(18,18,23,.4) 60%,rgba(18,18,23,0));
 }
-.photo-pays-islande:hover p{
-  opacity: 1;
+.caracteristiques-pays, .histoire, .activite, .gallerie{
+  max-width: 1400px;
+  margin: 0 auto;
 }
+.caracteristiques-pays{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 0;
+}
+.demographie{
+  flex:1;
+  white-space: nowrap;
+  border: 1px solid black;
+  margin: 0 1rem 0 0.5rem;
+}
+.histoire{
+  flex:2;
+  text-align: justify;
+  border: 1px solid black;
+  margin: 0 0.5rem 0 1rem;
+}
+.activite_contenu{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  align-items: center;
+  padding: 1rem 0;
+}
+.islande_activite_img{
+  border: 1px solid black;
+  width: 40%;
+  margin: 0 0.5rem 0 1rem;
+  align-self: flex-start;
+}
+.activite_texte{
+  border: 1px solid black;
+  text-align: justify;
+  margin: 0 1rem 0 0.5rem;
+}
+.gallerie{
+  background-color: white;
+  box-shadow: 0 0 10px 0 grey;
+}
+@media (max-width:799px) {
+  .caracteristiques-pays, .activite_contenu{
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+  .demographie, .activite_texte{
+    margin: 0.5rem 0 1rem 0;
+  }
+  .histoire, .islande_activite_img{
+    margin: 1rem 0 0.5rem 0;
+  }
+  .islande_activite_img{
+    align-self: center;
+    width: 100%;
 
+  }
+}
 /*ANIMATIONS*/
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
