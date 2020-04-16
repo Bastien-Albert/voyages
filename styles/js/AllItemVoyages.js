@@ -143,7 +143,6 @@ $(document).ready(function() {
         $contient.removeClass('is-select');
         $parentContient.attr("id", "continent-all-item").find('.all-item').addClass('is-select');
         $parent = $('body');
-        $parent.find('.block-cat').css('opacity', 0);
         $output = "";
         $.each(voyages, function(arrayKey, array) {
             $.each(array[$data], function(key, value) {
@@ -152,9 +151,7 @@ $(document).ready(function() {
                 });
             });
         });
-        $parent.find('.block-cat').animate({
-            opacity: 1,
-        }, 300).html($output);
+        $parent.find('.block-cat').html($output);
     });
     $('.all-item').click(function() {
         $(this).addClass('is-select');
@@ -184,7 +181,6 @@ $(document).ready(function() {
         $name.removeClass('is-select');
         $nameContient.attr("id", "name-cat-all-item").find('.all-item').addClass('is-select');
         $parent = $('body');
-        $parent.find('.block-cat').css('opacity', 0);
         $output = "";
         $.each(voyages, function(arrayKey, array) {
             $.each(array, function(key, value) {
@@ -199,8 +195,6 @@ $(document).ready(function() {
                 });
             });
         });
-        $parent.find('.block-cat').animate({
-            opacity: 1,
-        }, 300).html($output);
+        $parent.find('.block-cat').html($output);
     });
 });
