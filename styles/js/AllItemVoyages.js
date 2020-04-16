@@ -74,6 +74,8 @@ function htmlRender(voyage){
 }
 function allItem() {
     var output = "";
+    var div = $('.block-cat');
+    div.css('opacity', 0);
     $.each(voyages, function(arrayKey, array) {
         $.each(array, function(key, value) {
             $.each(value, function(i, value1) {
@@ -84,7 +86,9 @@ function allItem() {
             });
         });
     });
-    $('.block-cat').html(output);
+    div.animate({
+        opacity: 1,
+    }, 300).html(output);
 }
 function existMenu($parent){
     $parent.find('.select-content').animate({
@@ -98,11 +102,9 @@ $(document).ready(function() {
     $('.select-title span').click(function() {
         $parent = $(this).closest('.block-item-cat-list');
         $type = $parent.data("type");
-        console.log($type);
         if($type === "name")
         {
             $parentContent = $("#continent");
-            console.log($parentContent);
             existMenu($parentContent);
         }
         else
@@ -141,22 +143,23 @@ $(document).ready(function() {
         $contient.removeClass('is-select');
         $parentContient.attr("id", "continent-all-item").find('.all-item').addClass('is-select');
         $parent = $('body');
-        $foreach = voyages;
+        $parent.find('.block-cat').css('opacity', 0);
         $output = "";
-        $.each($foreach, function(arrayKey, array) {
+        $.each(voyages, function(arrayKey, array) {
             $.each(array[$data], function(key, value) {
                 $.each(value, function(i, value1) {
                     $output += htmlRender(value1[0]);
                 });
             });
         });
-        $parent.find('.block-cat').html($output);
+        $parent.find('.block-cat').animate({
+            opacity: 1,
+        }, 300).html($output);
     });
     $('.all-item').click(function() {
         $(this).addClass('is-select');
         $parent = $(this).closest('.block-item-cat-list');
         $type = $parent.data("type");
-        console.log($type);
         if($type === "continent" )
         {
             $parent.find(".list-item").attr("id", "continent-all-item");
@@ -181,6 +184,7 @@ $(document).ready(function() {
         $name.removeClass('is-select');
         $nameContient.attr("id", "name-cat-all-item").find('.all-item').addClass('is-select');
         $parent = $('body');
+        $parent.find('.block-cat').css('opacity', 0);
         $output = "";
         $.each(voyages, function(arrayKey, array) {
             $.each(array, function(key, value) {
@@ -195,6 +199,8 @@ $(document).ready(function() {
                 });
             });
         });
-        $parent.find('.block-cat').html($output);
+        $parent.find('.block-cat').animate({
+            opacity: 1,
+        }, 300).html($output);
     });
 });

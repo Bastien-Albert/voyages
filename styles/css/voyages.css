@@ -1,15 +1,12 @@
 :root{
     --var-color:rgb(80, 155, 245) ;
     --color-block : #ececec;
-    --color-two : #eceff1;
-    --color-three : #2980b9;
+    --color-one : #2980b9;
     --color-hamburger-menu:rgb(80, 155, 245);
     --border-hamburger-menu:1px solid rgba(255, 255, 255, 0.12);
-    --var-color-text:white;
     --var-max-width: 1400px;
     --color-filter : linear-gradient(0deg, #edf6fd, #f6fafe);
     --box-shadow-one: 0 0 8px 3px rgba(0, 0, 0, 0.3);
-    --border: 1px solid #dfdfdf;
     --menu-deroulant-color:#2e2e2e;
 }
 
@@ -19,8 +16,8 @@
 @font-face{font-family:'FiraSans';src:url('../fonts/FiraSans-UltraLight.otf');font-weight:300}
 
 html,body{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -42,7 +39,7 @@ a{
 header{
     position: sticky;
     top:0;
-    background-color: var(--color-three);
+    background-color: var(--color-one);
     z-index: 1000;
     transition: all 0.5s;
 }
@@ -80,8 +77,10 @@ nav .logo img{
 
 nav .menu-deroulant li {
     display: block;
-    margin:5px;
+    padding: 5px 0;
     width: initial;
+    transition: all 0.4s;
+    border-right: solid white;
 }
 
 nav .link a{
@@ -90,22 +89,98 @@ nav .link a{
     transition: all 0.3s;
 }
 nav  ul.menu-deroulant li{
+    text-align: right;
+    position: relative;
+}
+.menu-deroulant h3 {
+    margin: 0;
+    padding: 0;
+}
+nav ul.menu-deroulant li.title-menu {
     text-align: center;
+    color: black;
+    background: var(--color-filter);
+    margin: 0;
+    padding: 0;
 }
 .menu-deroulant{
     position: absolute;
     display: none;
     border-radius: 3px;
-    background-color: var(--menu-deroulant-color);
-    max-width:300px;
-    width: 125px;
+    width: 100%;
+    max-width: 250px;
+    background: white;
     margin-top: 7px!important;
-    border-top: solid var(--var-color) ;
+    border-top: solid var(--var-color);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.35);
 }
-nav .menu-deroulant a {
+nav .menu-deroulant {
     padding: initial;
     width: 100%;
-    display: table;
+    color: black;
+}
+nav .menu-deroulant:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -8px;
+    left: 20%;
+    margin-left: -8px;
+    border: 8px solid transparent;
+    border-top-width: 0;
+    border-bottom-color: #47a7eb;
+}
+nav .menu-deroulant a{
+    color: black;
+}
+.menu-deroulant-child{
+    position: absolute;
+    left: -200px;
+    background-color: #ffffff;
+    color: black;
+    top: 0;
+    width: 200px;
+    display: none;
+    border: solid 1px #dfdfdf;
+}
+nav .menu-deroulant.menu-active-deroulant{
+    display: block;
+}
+.cat-nav-menu {
+    cursor: pointer;
+}
+nav .menu-deroulant li:hover {
+    background: var(--color-filter);
+    border-right: solid var(--color-one);
+}
+.menu-is:before{
+    content: "\f0d9";
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 400;
+    float: left;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.menu-is:hover > .menu-deroulant-child{
+    display: block;
+}
+.menu-is span{
+    margin-right: 10px;
+}
+nav .link a.toggle-menu-deroulant{
+    padding: 0;
+    margin-left: 10px;
+}
+.toggle-menu-deroulant:before {
+    font-family: 'Font Awesome 5 Pro';
+    font-size: inherit;
+    font-style: normal;
+    text-rendering: auto;
+    content: "\f0d7";
+    font-weight: 900;
+    unicode-bidi: isolate;
+    line-height: 1;
 }
 .respon {
     display: none;
@@ -404,9 +479,21 @@ main {
 .list-item .is-select {
     background: var(--color-block);
 }
+.block-cat {
+    animation: fadeIn 1s backwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 /*footer*/
 footer{
-    background-color:var(--color-three);
+    background-color:var(--color-one);
     margin-top:auto;
     color: white;
     text-align: center;
