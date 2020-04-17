@@ -504,15 +504,6 @@ footer{
 
 @media screen and (max-width: 950px)
 {
-    .block-inner .block-audio{
-        padding-right: 0!important;
-    }
-    .block-audio {
-        width: 100%;
-    }
-    .block-inner{
-        padding: 10px;
-    }
     .logo{
         display: none;
     }
