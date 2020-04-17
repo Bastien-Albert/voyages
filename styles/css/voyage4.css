@@ -25,6 +25,7 @@ html,body{
 }
 body{
     background-color: var(--color-block);
+    overflow-x: hidden!important;
 }
 * {
     box-sizing: border-box;
@@ -415,6 +416,7 @@ main {
     display: none;
     position: sticky;
     top: 73px;
+    animation: rubberBand 1s backwards;
 }
 .list-item {
     margin: 10px;
@@ -457,6 +459,17 @@ main {
 .page-title {
     text-align: center;
 }
+h3.page-title{
+    background: #fefefe;
+    border: 1px solid rgba(20, 20, 20, 0.16);
+    border-radius: 4px;
+    padding: 14px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 2px, inset rgba(0, 0, 0, 0.08) 0px -5px 20px;
+    background-clip: padding-box;
+    max-width: var(--var-max-width);
+    margin: auto;
+    margin-bottom:20px;
+}
 .block-body-inner {
     max-width: var(--var-max-width);
     margin: 0 auto;
@@ -470,17 +483,20 @@ main {
     flex: 0 1 auto;
     display: block;
     width: calc(100% - 300px);
+    animation: bounceInRight 1s backwards;
 }
 .sidebar{
     width: 300px;
     position: sticky;
     top: 90px;
+    animation: bounceInLeft 1s backwards;
 }
 .first-block {
     background: white;
     padding: 10px;
     border-radius: 5px;
     border: solid 1px #dfdfdf;
+    text-align: center;
 }
 .sidebar-container {
     background: white;
@@ -500,6 +516,7 @@ main {
     border: solid 1px #dfdfdf;
     border-radius: 5px;
     text-align: center;
+    cursor: pointer;
 }
 .name-chose h3 {
     margin: 0;
@@ -528,6 +545,101 @@ main {
     max-width: 500px;
     width: 100%;
 }
+
+@keyframes bounceInRight {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    from {
+        opacity: 0;
+        transform: translate3d(3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(-25px, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(10px, 0, 0);
+    }
+
+    90% {
+        transform: translate3d(-5px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+@keyframes rubberBand {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+@keyframes bounceInLeft {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(-3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(25px, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    90% {
+        transform: translate3d(5px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
 /*footer*/
 footer{
     background-color:var(--color-one);
