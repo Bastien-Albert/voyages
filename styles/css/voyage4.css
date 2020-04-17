@@ -459,6 +459,17 @@ main {
 .page-title {
     text-align: center;
 }
+h3.page-title{
+    background: #fefefe;
+    border: 1px solid rgba(20, 20, 20, 0.16);
+    border-radius: 4px;
+    padding: 14px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 2px, inset rgba(0, 0, 0, 0.08) 0px -5px 20px;
+    background-clip: padding-box;
+    max-width: var(--var-max-width);
+    margin: auto;
+    margin-bottom:20px;
+}
 .block-body-inner {
     max-width: var(--var-max-width);
     margin: 0 auto;
