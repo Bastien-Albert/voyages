@@ -45,18 +45,63 @@
   box-shadow: 0 0 10px 1px grey;
   z-index: 2;
 }
+.photo_pays_islande_container{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg,rgba(18,18,23,.6) 0,rgba(18,18,23,.4) 60%,rgba(18,18,23,0));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
 .h2_island{
   color: white;
   margin: 0;
-  height: 100%;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(0deg,rgba(18,18,23,.6) 0,rgba(18,18,23,.4) 60%,rgba(18,18,23,0));
   letter-spacing: -5px;
   font-size: 50px;
   font-family: 'Lexend Giga', sans-serif;
+  flex-grow: 1;
+}
+.liste_nav_islande{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 15px;
+  font-family: 'Lexend Giga', sans-serif;
+  padding: 0;
+  height: 100%;
+  margin: 0;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+}
+.liste_nav_islande > li{
+  height: 100%;
+  padding: 1rem;
+  margin: 0.2rem 1rem;
+  text-align: center;
+  border-radius: 20px;
+}
+.liste_nav_islande > li:hover{
+  background-color: rgba(23, 140, 26, 0.2);
+  transition: all ease-out 0.1s;
+}
+.liste_nav_islande > li > a{
+  color: rgba(12, 65, 13, 1);
+  text-decoration:none;
+}
+.nav_islande{
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top:0;
 }
 .caracteristiques-pays, .histoire, .activite, .gallerie{
   max-width: 1400px;
@@ -192,6 +237,9 @@
   }
   .demographie{
     white-space: normal;
+  }
+  .liste_nav_islande{
+    font-size: 10px;
   }
 }
 
