@@ -21,6 +21,17 @@ function existMenuDeroulant($parent){
     });
 }
 $(document).ready(function() {
+    $(window).scroll(function() {
+        $header = $('header');
+        if($(window).scrollTop() <= 10 && $header.hasClass('is-scroll'))
+        {
+            $header.removeClass('is-scroll');
+        }
+        else if (!$header.hasClass('is-scroll') && $(window).scrollTop() > 10)
+        {
+            $header.addClass('is-scroll');
+        }
+    });
     $('.cat-nav-menu').click(function() {
         $id = $(this).data('type-menu');
         if($id === "Continent")

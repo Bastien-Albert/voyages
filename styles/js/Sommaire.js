@@ -44,26 +44,4 @@ $(document).ready(function() {
             existMenu($div);
         }
     });
-
-    $('.name').click(function() {
-        $data = $(this).data("id");
-        $parent = $(this).closest('.list-item');
-        $id = $parent.attr("id").replace('name-', '');
-        $("#" + $id).removeClass("is-select");
-        $parent.attr("id", "name-" + $data);
-        $(this).addClass("is-select");
-        $parent = $('body');
-        $parent.find('.block-cat').css('opacity', 0);
-        $output = "";
-        $.each(voyages, function(arrayKey, array) {
-            $.each(array[$data], function(key, value) {
-                $.each(value, function(i, value1) {
-                    $output += htmlRender(value1[0]);
-                });
-            });
-        });
-        $parent.find('.block-cat').animate({
-            opacity: 1,
-        }, 300).html($output);
-    });
 });
