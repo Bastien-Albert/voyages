@@ -71,7 +71,7 @@ var voyages = [{
 }];
 
 function htmlRender(voyage){
-    return "<div class=\"block-item\">\n" +
+    return "<article class=\"block-item\">\n" +
         "      <div class=\"block-cat-image\">\n" +
         "         <a href=\"voyage" + voyage.tracker +".html\">\n" +
         "           <h4>" + voyage.title + "</h4>\n" +
@@ -81,7 +81,7 @@ function htmlRender(voyage){
         "      <div class=\"block-cat-description\">\n" +
         "         <p>" + voyage.description +"</p>\n" +
         "      </div>\n" +
-        "   </div>";
+        "   </article>";
 }
 function allItem() {
     var output = "";
