@@ -571,8 +571,7 @@ footer{
 
 /*reponsive*/
 
-@media screen and (max-width: 950px)
-{
+@media screen and (max-width: 950px) {
 
     .logo{
         display: none;
