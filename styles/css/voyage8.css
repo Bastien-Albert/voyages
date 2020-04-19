@@ -1,0 +1,302 @@
+html, body{
+  margin:0;
+  padding: 0;
+  font-family: 'Indie Flower', cursive;
+}
+h1{
+  text-align: center;
+  font-weight: bolder;
+  color: #157A6E;
+  text-shadow: 2px 2px 2px white;
+  border-bottom: 2px dashed #157A6E;
+  margin: 0 0 1rem 0;
+  padding: 1rem;
+  font-size: 40px;
+}
+.main_philippines{
+  background: linear-gradient(to top, #1F2421, #157A6E, #E8E2BE);
+  display: flex;
+  flex-direction: column;
+  color: #1F2421;
+}
+.main_top, .main_mid{
+  width: 100vw;
+  height: 80vh;
+}
+.main_top{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  max-width: 900px;
+  margin: 1rem auto;
+  border: 1px dashed white;
+}
+.main_mid{
+  background-image: url("../images/philippines.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.main_bot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SLIDER */
+
+.slider_philippines img{
+  max-width: 100%;
+}
+.miniature input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+.slider_philippines label{
+  cursor:pointer;
+}
+.miniature label:hover{
+  border-bottom:5px solid #157A6E;
+}
+.slider_philippines{
+  overflow: hidden;
+  position: relative;
+  max-width: 900px;
+  flex: 1;
+  margin: 1rem;
+}
+.photos_mini{
+  padding-top: 76%;
+  display: flex;
+}
+.miniature{
+  flex: 1;
+  padding:0.25rem;
+}
+.fenetre1{
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  transition:all 0.5s;
+  left: -100%;
+  opacity: 0;
+}
+.fenetre2{
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  transition:all 0.5s;
+  right: -100%;
+  opacity: 0;
+}
+.miniature_figcaption{
+  position: absolute;
+  top: 70%;
+  left: 0;
+  right: 0;
+  padding: 0.5rem;
+  transition: opacity .4s;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  background: rgba(255,255,255, 0.7);
+  font-weight: bold;
+  font-size: 20px;
+}
+.fen:checked ~ .fenetre1{
+  left: 0;
+  opacity: 1;
+}
+.fen:checked ~ .fenetre2{
+  right: 0;
+  opacity: 1;
+}
+.fen:checked~figcaption{
+  opacity: 1
+	}
+.photos_main_top{
+  visibility: hidden;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  grid-gap: 0.5rem;
+}
+.photos_main_top_1{
+  grid-column: 1/5;
+  grid-row: 1/4;
+}
+.photos_main_top_2{
+  grid-column: 5/9;
+  grid-row: 1/4;
+}
+.photos_main_top_3{
+  grid-column: 1/5;
+  grid-row: 4/7;
+}
+.photos_main_top_4{
+  grid-column: 5/9;
+  grid-row: 4/7;
+}
+.photos_main_top_5{
+  grid-column: 1/5;
+  grid-row: 7/10;
+}
+.photos_main_top_6{
+  grid-column: 5/9;
+  grid-row: 7/10;
+}
+.photos_main_top_7{
+  grid-column: 1/5;
+  grid-row: 10/13;
+}
+.photos_main_top_8{
+  grid-column: 5/9;
+  grid-row: 10/13;
+}
+.photos_main_top_9{
+  grid-column: 1/5;
+  grid-row: 13/16;
+}
+.photos_main_top_10{
+  grid-column: 5/9;
+  grid-row: 13/16;
+}
+.photos_main_top figure{
+  margin: 0;
+  position: relative;
+}
+.photos_main_top figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photos_main_top_figcaption{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background: rgba(255,255,255, 0.7);
+  font-weight: bold;
+  opacity: 0;
+  transition: ease-in 0.1s;
+}
+.photos_main_top_figcaption:hover{
+  opacity: 1;
+}
+@media (max-width:799px) {
+  .photos_mini{
+    visibility: hidden;
+    padding: 0;
+    position: absolute;
+  }
+  .photos_main_top{
+    visibility: visible;
+  }
+}
+
+/* CARACTERISTIQUES */
+
+.main_mid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-family: 'Gotu', sans-serif;
+}
+.main_mid_corps{
+  max-width: 1400px;
+  margin: 0 auto;
+  background: rgba(255,255,255, 0.7);
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(31, 36, 33, 0.5);
+}
+.histoire_philippines{
+    text-align: center;
+}
+.histoire_philippines hr {
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+.demographie_philippines{
+  background-color: #E8E2BE;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1rem;
+  border:1px dashed #157A6E;
+  min-width: 70%;
+}
+.table_demographie{
+  margin: 0 auto;
+}
+.table_demographie td{
+  width:15%;
+}
+.ligne_haut{
+  border-bottom: 1px solid grey;
+}
+@media (max-width:799px) {
+  .main_mid_corps{
+    font-size: 10px;
+  }
+}
+
+/* ACTIVITES */
+
+h2{
+  color: black;
+  font-weight: bold;
+}
+.activites{
+  max-width: 1400px;
+  display: flex;
+  flex-direction: row;
+}
+section{
+  flex: 1;
+  margin: 1rem;
+  text-align: center;
+}
+.activite_1, .activite_2, .activite_3{
+  background-size: cover;
+  border-radius: 100px;
+  padding: 2rem;
+  transition: ease-in 0.1s;
+}
+.activite_1{
+  background-image: url("../images/manille.jpg");
+}
+.activite_2{
+  background-image: url("../images/vigan.jpg");
+}
+.activite_3{
+  background-image: url("../images/batad_rizières.jpg");
+}
+.activite_1:hover, .activite_2:hover, .activite_3:hover{
+  background-image: inherit;
+  background-color: white;
+}
+.activite_text{
+  opacity: 0;
+}
+.activite_1:hover .activite_text, .activite_2:hover .activite_text, .activite_3:hover .activite_text{
+  opacity: 1;
+}
+@media (max-width:1000px) {
+  .activites{
+    flex-direction: column;
+  }
+}
