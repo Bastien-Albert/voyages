@@ -157,6 +157,7 @@ h2:hover {
 .gallerie_NZ {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .figure_gallerie_NZ {
@@ -232,13 +233,32 @@ h2:hover {
     .gallerie_NZ {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .figure_gallerie_NZ {
-        min-width: 150px;
+        min-width: 130px;
         width: 20%;
     }
+}
+@media (max-width:399px) {
+  .titre_NZ h1{
+    font-size: 15px;
+  }
+  .activite_NZ{
+    margin: 0;
+    text-align: center;
+  }
+  .activite_figure_NZ{
+    width: 95%;
+  }
+  .demographie_NZ li {
+    margin: 0;
+    font-size:10px;
+  }
+  .figure_gallerie_NZ{
+    margin: 0 0 0.2rem 0;;
+  }
 }
 
 /*ANIMATION*/
