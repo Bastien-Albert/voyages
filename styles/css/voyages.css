@@ -333,13 +333,7 @@ nav .link a.toggle-menu-deroulant{
 .CanvasMenu-titre{
     padding: 10px;
 }
-/*.CanvasMenu-item a{*/
-/*    padding-left: 10px;*/
-/*    padding-top: 10px;*/
-/*    padding-bottom: 10px;*/
-/*    font-size: 15px;*/
-/*    display: block;*/
-/*}*/
+
 .CanvasMenu-nav.CanvasMenu-cat.is-select{
     background-color: initial;
 }
@@ -360,7 +354,9 @@ footer{
     text-align: center;
     padding:10px 0;
 }
-
+.footer-sup a{
+    color: white;
+}
 /*reponsive*/
 
 @media screen and (max-width: 950px)
