@@ -113,16 +113,9 @@ $(document).ready(function() {
     $('.select-title span').click(function() {
         $parent = $(this).closest('.block-item-cat-list');
         $type = $parent.data("type");
-        if($type === "name")
-        {
-            $parentContent = $("#continent");
-            existMenu($parentContent);
-        }
-        else
-        {
-            $parentName = $("#name");
-            existMenu($parentName);
-        }
+
+        $type === "name" ? existMenu($("#continent")) : existMenu($("#name"));
+
         if($parent.hasClass('menu-active'))
         {
             existMenu($parent);
@@ -198,10 +191,7 @@ $(document).ready(function() {
                 $.each(value, function(i, value1) {
                     $.each(value1, function(b, valueVoyage) {
                         var voyage = valueVoyage[0];
-                        if(voyage.continent === $data)
-                        {
-                            $output += htmlRender(voyage);
-                        }
+                        $output += voyage.continent === $data ? htmlRender(voyage) : "";
                     });
                 });
             });

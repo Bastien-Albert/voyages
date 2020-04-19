@@ -7,6 +7,18 @@ function existMenu($parent){
     });
 }
 $(document).ready(function() {
+    $("a[href*='#']:not([href='#'])").click(function() {
+        if (
+            location.hostname === this.hostname
+            && this.pathname.replace(/^\//,"") === location.pathname.replace(/^\//,"")
+        ) {
+            $hash = $(this.hash);
+            $hash = $hash.length ? $hash : $("[name=" + this.hash.slice(1) +"]");
+            if ( $hash.length ) {
+                $("html, body").animate( { scrollTop: $hash.offset().top }, 1000);
+            }
+        }
+    });
     $('.select-title span').click(function() {
         $parent = $(this).closest('.block-item-cat-list');
         $type = $parent.data("type");
