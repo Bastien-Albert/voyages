@@ -4,6 +4,7 @@ main
     max-width: 1000px;
     margin: auto;
     text-align: center;
+    padding: 10px;
 }
 .block{
     padding-top: 10px;
