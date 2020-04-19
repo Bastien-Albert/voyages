@@ -1,0 +1,154 @@
+:root{
+    --color-one : #c0392b;
+}
+@font-face{font-family:'Signatra';src:url('../fonts/Signatra.otf');font-weight:300}
+/*main*/
+main {
+    padding:20px ;
+    margin: auto;
+    max-width: 1000px;
+}
+.mySlides {
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.mySlides:nth-child(10) img{
+
+}
+img {
+    vertical-align: middle;
+}
+.caption-slide{
+    position: absolute;
+    color: #f2f2f2;
+    font-family:Signatra;
+    font-size: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideshow-container {
+    position: relative;
+}
+.caption{
+    display: none;
+}
+
+.slideshow-container img{
+    max-height:640px;
+    width: 100%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.caption p {
+    color: black;
+    font-size: 15px;
+    bottom:0;
+    left: 0;
+    right: 0;
+    height: auto;
+    text-align: center;
+    background: white;
+    border: solid 1px #dfdfdf;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.slider-button {
+    text-align: center;
+}
+.slider-button .active, .slider-button .dot:hover {
+    background-color: #717171;
+}
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/*reponsive*/
+
+
+@media only screen and (max-width: 300px) {
+    .prev, .next,.caption p {font-size: 11px}
+}
+
+@media screen and (max-width:515px) {
+    .caption-slide{
+        display: none;
+    }
+
+}
+@media only screen and (max-width: 300px) {
+    .prev, .next,.caption p {font-size: 11px}
+}
+

@@ -1,0 +1,254 @@
+
+/*main*/
+main {
+    padding: 10px 20px;
+}
+.select {
+    max-width: var(--var-max-width);
+    margin: auto;
+    padding-bottom: 10px;
+}
+.select-continent{
+    background: var(--color-filter);
+    position: relative;
+    padding: 5px;
+}
+.block-item-cat-list:first-child{
+    float: left;
+}
+.select-title span{
+    cursor: pointer;
+}
+.select-title span:after {
+    font-family: 'Font Awesome 5 Pro';
+    font-size: inherit;
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f0d7";
+    font-weight: 900;
+    margin-left: .2em;
+    unicode-bidi: isolate;
+}
+.select-continent .select-title{
+    text-align: right;
+}
+.select-continent h3{
+    margin: 0;
+    background: var(--color-filter);
+    text-align: center;
+}
+.select-content {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    background: white;
+    max-width: 300px;
+    width: 100%;
+    border-top: solid var(--var-color);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.35);
+}
+.block-item-cat-list:first-child > .select-content {
+    left: 0;
+}
+
+.select-content{
+    display: none;
+}
+.menu-active .select-content{
+    display: block;
+    opacity: 0;
+}
+.select-continent li {
+    list-style: none;
+    padding: 10px;
+}
+.list-item {
+    margin: 10px;
+}
+.select-content:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    top: -8px;
+    right: 10%;
+    margin-left: -8px;
+    border: 8px solid transparent;
+    border-top-width: 0;
+    border-bottom-color: #47a7eb;
+}
+.block-item-cat-list:first-child > .select-content:before{
+    right: initial;
+    left: 10%;
+}
+.block-cat{
+    max-width: var(--var-max-width);
+    margin: auto;
+}
+.block-item{
+    display: flex;
+    margin-bottom:20px;
+    background: white;
+}
+.block-cat-image{
+    position: relative;
+    height: 100%;
+    margin: 10px;
+    margin-bottom: 1px;
+}
+.block-cat-image a {
+    color: #2e2e2e;
+}
+.block-cat-image h4{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    text-align: center;
+    background: #ffffff8a;
+}
+.block-cat-image img{
+    max-width: 250px;
+}
+.continent, .all-item, .name {
+    cursor: pointer;
+}
+.block-cat-description {
+    padding-left: 10px;
+}
+.block-item:hover {
+    z-index: 2;
+    transition: all 200ms ease-in;
+    transform: scale(1.02);
+}
+.list-item .is-select {
+    background: var(--color-block);
+}
+.block-cat .block-item:nth-child(even) {
+    animation: bounceInRight 1s backwards;
+}
+.block-cat .block-item:nth-child(odd) {
+    animation: bounceInLeft 1s backwards;
+}
+.selector {
+    animation: rubberBand 1s backwards;
+}
+@keyframes bounceInRight {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    from {
+        opacity: 0;
+        transform: translate3d(3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(-25px, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(10px, 0, 0);
+    }
+
+    90% {
+        transform: translate3d(-5px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+@keyframes rubberBand {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+@keyframes bounceInLeft {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(-3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(25px, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    90% {
+        transform: translate3d(5px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+/*reponsive*/
+
+@media screen and (max-width: 950px)
+{
+    .block-item{
+        flex-direction: column;
+    }
+    .block-cat-image h4 {
+        position: initial;
+        background: none;
+    }
+    .block-item {
+        text-align: center;
+        padding: 10px;
+    }
+    .block-cat-image img {
+         width: 100%;
+    }
+}

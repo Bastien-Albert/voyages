@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angleterre | Voyage</title>
+    <link rel="shortcut icon" href="../earth.ico">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../styles/js/canvas-menu.js"></script>
+    <script type="text/javascript" src="../styles/js/Sommaire.js"></script>
+    <link rel="stylesheet" href="../styles/css/fa.css">
+    <link rel="stylesheet" href="../styles/css/voyages.css">
+    <link rel="stylesheet" href="../styles/css/voyage5.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="voyages.html">
+                    <img src="../styles/images/earth.png" alt="Voyages">
+                </a>
+            </div>
+            <div class="link">
+                <ul>
+                    <li>
+                        <a href="voyages.html">Accueil</a>
+                    </li>
+                    <li class="cat-nav-menu" data-type-menu="Prenom" id="prenom-nav-menu">
+                        Prénom <a class="toggle-menu-deroulant" role="button"></a>
+                        <ul class="menu-deroulant">
+                            <li class="title-menu"><h3>Prénom</h3></li>
+                            <li class="menu-is"><span>Bastien</span>
+                                <ul class="menu-deroulant-child">
+                                    <li><a href="voyage4.html">États-Unis (Amérique)</a></li>
+                                    <li><a href="voyage5.html">Angleterre</a></li>
+                                    <li><a href="voyage6.html">Espagne</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-is"><span>Kevin</span>
+                                <ul class="menu-deroulant-child">
+                                    <li><a href="voyage1.html">Cuba</a></li>
+                                    <li><a href="voyage2.html">Indonésie</a></li>
+                                    <li><a href="voyage3.html">Allemagne</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-is"><span>Céline</span>
+                                <ul class="menu-deroulant-child">
+                                    <li><a href="voyage9.html">Nouvelle-Zélande</a></li>
+                                    <li><a href="voyage7.html">Islande</a></li>
+                                    <li><a href="voyage8.html">Philippines</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cat-nav-menu" data-type-menu="Continent" id="continent-nav-menu">
+                        Continent <a class="toggle-menu-deroulant" role="button"></a>
+                        <ul class="menu-deroulant">
+                            <li class="title-menu"><h3>Continent</h3></li>
+                            <li class="menu-is"><span>Europe</span>
+                                <ul class="menu-deroulant-child">
+                                    <li><a href="voyage5.html">Angleterre</a></li>
+                                    <li><a href="voyage6.html">Espagne</a></li>
+                                    <li><a href="voyage3.html">Allemagne</a></li>
+                                    <li><a href="voyage7.html">Islande</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-is"><span>Asie</span>
+                                <ul class="menu-deroulant-child">
+                                    <li><a href="voyage2.html">Indonésie</a></li>
+                                    <li><a href="voyage8.html">Philippines</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-is"><span>Océanie</span>
+                                <ul class="menu-deroulant-child">
+                                    <li><a href="voyage9.html">Nouvelle-Zélande</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-is"><span>Amérique</span>
+                                <ul class="menu-deroulant-child">
+                                    <li><a href="voyage4.html">États-Unis (Amérique)</a></li>
+                                    <li><a href="voyage1.html">Cuba</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="respon">
+                <div class="hamburger-menu">
+                    <i class="far fa-hamburger"></i>
+                </div>
+                <div class="logo-respon">
+                    <a href="voyages.html">
+                        <img src="../styles/images/earth.png" alt="Voyages">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="block-title" id="particles-js">
+            <div class="page-title">
+                <h1>Angleterre</h1>
+                <h4>Top 10 des attractions touristiques anglaises</h4>
+            </div>
+        </div>
+        <section class="selector">
+            <div class="select">
+                <div class="select-continent">
+                    <div class="block-item-cat-list">
+                        <div class="select-title"><span>Sommaire</span></div>
+                        <div class="select-content">
+                            <h3>Sommaire</h3>
+                            <div class="list-item" id="continent-all-item">
+                                <ol>
+                                    <li>
+                                        <a href="#chose-1" class="js-click" data-id-chose="chose-1">Tower of London</a>
+                                    </li>
+                                    <li>
+                                        <a href="#chose-2" class="js-click" data-id-chose="chose-2">Hylands House and Estate, Essex</a>
+                                    </li>
+                                    <li>
+                                        <a href="#chose-3" class="js-click" data-id-chose="chose-3">La Cathédrale de St Paul </a>
+                                    </li>
+                                    <li>
+                                        <a href="#chose-4" class="js-click" data-id-chose="chose-4">Westminster Abbey</a>
+                                    </li>
+                                    <li>
+                                        <a href="#chose-5" class="js-click" data-id-chose="chose-5">Le parc d'attractions et zoo Flamingo Land, Yorkshire</a>
+                                    </li>
+                                    <li>
+                                        <a href="#chose-6" class="js-click" data-id-chose="chose-6">Le Zoo de Chester</a>
+                                    </li>
+                                    <li>
+                                        <a href="#chose-7" class="js-click" data-id-chose="chose-7">Windermere Boat Cruises, Bowness</a>
+                                    </li>
+                                    <li>
+                                        <a href="#chose-8" class="js-click" data-id-chose="chose-8">The Royal Academy of Arts, London</a>
+                                    </li>
+                                    <li>
+                                        <a href="#chose-9" class="js-click" data-id-chose="chose-9">Stonehenge</a>
+                                    </li>
+                                    <li>
+                                        <a href="#chose-10" class="js-click" data-id-chose="chose-10">The Houses of Parliament and Big Ben</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block">
+            <article class="block-item" id="chose-1">
+                <h3>1. Tower of London</h3>
+                <div class="content">
+                    <div class="block-image">
+                        <img src="../styles/images/Angleterre_2.jpg" alt="Image 1 Angleterre">
+                    </div>
+                    <div class="block-description">
+                        <p>La première place va à la Tour de Londres, l'un des plus célèbres forteresses et la maison des Joyaux de la Couronne d'une valeur inestimable. Construite, il y a près de 1000 ans  comme une résidence royale et prison, des histoires fascinantes sont abrités dans ses murs.</p>
+                        <p>Les visiteurs peuvent aujourd'hui faire une visite guidée des célèbres"Beefeaters", assister à la cérémonie de la remise des clés, qui a lieu tous les jours , et en apprendre davantage sur les plus insolites ex-habitants de la Tour - y compris un ours polaire .</p>
+                    </div>
+                </div>
+            </article>
+            <article class="block-item" id="chose-2">
+                <h3>2. Hylands House and Estate, Essex</h3>
+                <div class="content">
+                    <div class="block-image-reponsive">
+                        <img src="../styles/images/Angleterre_3.jpg" alt="Image 2 Angleterre">
+                    </div>
+                    <div class="block-description">
+                        <p>La deuxième place est attribué à Hylands House, près de Chelmsford, Essex pour sa superbe architecture et ses beaux jardins.</p>
+                        <p>Un manoir vieux de 300 ans est aujourd'hui ouvert au public dans sa totalité. Ainsi vous pouvez visiter la salle de dessin et la décadente salle de banquet. Le véritable joyau de sa couronne :  les 574 hectares tout autour incluant des bois paysagers, des lacs et des jardins colorés. Parfait pour une promenade.</p>
+                    </div>
+                    <div class="block-image">
+                        <img src="../styles/images/Angleterre_3.jpg" alt="Image 2 Angleterre">
+                    </div>
+                </div>
+            </article>
+            <article class="block-item" id="chose-3">
+                <h3>3. La Cathédrale de St Paul </h3>
+                <div class="content">
+                    <div class="block-image">
+                        <img src="../styles/images/Angleterre_4.jpg" alt="Image 3 Angleterre">
+                    </div>
+                    <div class="block-description">
+                        <p>La cathédrale iconique a été le témoin de nombreux événements importants de l'histoire de la Grande-Bretagne, y compris les obsèques nationaux de sir Winston Churchill et le mariage du prince Charles et la princesse Diana.</p>
+                        <p>Une visite à la cathédrale Saint-Paul offre 1200 ans d'histoire, ainsi que la chance de gravir les 237 marches menant au sommet de la coupole spectaculaire. Sur votre chemin vers les hauteurs, vous pourrez découvrir l'atmosphère de la Whispering Gallery, où un chuchotement peut être entendu à partir de 100 mètres de distance, avant d'admirer une vue imprenable sur les toits de Londres</p>
+                    </div>
+                </div>
+            </article>
+            <article class="block-item" id="chose-4">
+                <h3>4. Westminster Abbey</h3>
+                <div class="content">
+                    <div class="block-image-reponsive">
+                        <img src="../styles/images/Angleterre_5.jpg" alt="Image 4 Angleterre">
+                    </div>
+                    <div class="block-description">
+                        <p>Juste derrière Saint-Paul dans le top dix, il y a un autre haut lieu du tourisme de Londres, l'Abbaye de Westminster où s'est déroulé le plus célèbre mariage de l'année 2011 !</p>
+                        <p>Sur les traces finales de Kate Middleton avant qu'elle ne devienne la duchesse de Cambridge, admirer l'architecture gothique de renom, et admirez de magnifiques monuments de l'abbaye de grands rois et reines de l'histoire.</p>
+                        <p class="color-text"><b>Le saviez-vous ?</b> Charles Dickens, Sir Isaac Newton et Charles Darwin sont parmi les 3000 personnages célèbres enterrés à l'abbaye de Westminster.</p>
+                    </div>
+                    <div class="block-image">
+                        <img src="../styles/images/Angleterre_5.jpg" alt="Image 4 Angleterre">
+                    </div>
+                </div>
+            </article>
+            <article class="block-item" id="chose-5">
+                <h3>5. Le parc d'attractions et zoo Flamingo Land, Yorkshire</h3>
+                <div class="content">
+                    <div class="block-image">
+                        <img src="../styles/images/Angleterre_6.jpg" alt="Image 5 Angleterre">
+                    </div>
+                    <div class="block-description">
+                        <p>Avec des manèges, un zoo, des spectacles et une grande variété de restaurants et de bars, le parc Flamingo Land, dans le Yorkshire, plaira vraiment à tout le monde !</p>
+                        <p class="color-text"><b>Pourquoi est-il appelé Flamingo Land ?</b>  Les magnifiques flamants roses  étaient quelques-uns des premiers habitants du parc, et aujourd'hui ils ont un programme de conservation efficace pour eux.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="block-item" id="chose-6">
+                <h3>6. Le Zoo de Chester</h3>
+                <div class="content">
+                    <div class="block-image-reponsive">
+                        <img src="../styles/images/Angleterre_7.jpg" alt="Image 6 Angleterre">
+                    </div>
+                    <div class="block-description">
+                        <p>Le zoo de Chester accueille la plus grande exposition d'orangs-outans d'Europe et la plus grande serre à papillons au sein d'un zoo au Royaume-Uni.</p>
+                        <p>Non seulement il est le foyer de 11.000 animaux - y compris certaines des espèces les plus menacées de la planète - il y a aussi 110 hectares de jardins à explorer. Visite d'un jardin de rocaille de l'Himalaya, jouer au mini golf, ou obtenir votre visage peint comme votre animal préféré.</p>
+                    </div>
+                    <div class="block-image">
+                        <img src="../styles/images/Angleterre_7.jpg" alt="Image 6 Angleterre">
+                    </div>
+                </div>
+            </article>
+            <article class="block-item" id="chose-7">
+                <h3>7. Windermere Boat Cruises, Bowness</h3>
+                <div class="content">
+                    <div class="block-image">
+                        <img src="../styles/images/Angleterre_8.jpg" alt="Image 7 Angleterre">
+                    </div>
+                    <div class="block-description">
+                        <p>Situé dans la beauté exceptionnelle du parc national du Lake District, le lac Windermere est la destination touristique la plus populaire en Cumbria.</p>
+                        <p>Paisible, sauvage et entouré de montagnes brumeuses, Windermere est le plus grand lac naturel de grande Bretagne. Sa surface est parsemée de bateaux toute l'année - quelle meilleure façon de découvrir ce paysage exceptionnel qu'avec une croisière tranquille ?</p>
+                    </div>
+                </div>
+            </article>
+            <article class="block-item" id="chose-8">
+                <h3>8. The Royal Academy of Arts, London</h3>
+                <div class="content">
+                    <div class="block-image-reponsive">
+                        <img src="../styles/images/Angleterre_9.jpg" alt="Image 8 Angleterre">
+                    </div>
+                    <div class="block-description">
+                        <p>Situé en plein cœur du West End de Londres, The Royal Academy of Arts est la plus ancienne institution d'œuvres d'art en Grande-Bretagne - et c'est une oasis de calme dans la ville animée. La collection permanente de l'Académie comprend des œuvres célèbres de Turner, Constable, Waterhouse et Hockney, pour n'en nommer que quelques-uns.</p>
+                        <p>Expositions saisonnières changent régulièrement et les droits d'entrée varient, mais avec des installations, objets d'art et des événements spéciaux réguliers il y en a pour tous les goûts.</p>
+                    </div>
+                    <div class="block-image">
+                        <img src="../styles/images/Angleterre_9.jpg" alt="Image 8 Angleterre">
+                    </div>
+                </div>
+            </article>
+            <article class="block-item" id="chose-9">
+                <h3>9. Stonehenge</h3>
+                <div class="content">
+                    <div class="block-image">
+                        <img src="../styles/images/Angleterre_10.jpg" alt="Image 9 Angleterre">
+                    </div>
+                    <div class="block-description">
+                        <p>Faisant partie du Site du Patrimoine Mondial de l'UNESCO de Stonehenge et Avebury, Stonehenge est une des destinations touristiques les plus reconnaissables de Grande-Bretagne.</p>
+                            <p class="color-text"><b>Mais qu'est-ce que c'est ?</b> Si personne n'a réussi à répondre à cette question avec certitude, le mystère et la spiritualité de Stonehenge n'en attirent pas moins une foule nombreuse.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="block-item" id="chose-10">
+                <h3>10. The Houses of Parliament and Big Ben</h3>
+                <div class="content">
+                    <div class="block-image-reponsive">
+                        <img src="../styles/images/Angleterre_11.jpg" alt="Image 10 Angleterre">
+                    </div>
+                    <div class="block-description">
+                        <p>Les yeux des visiteurs s'emerveillent depuis 150 ans donc il n'est pas surprenant que l'emblématique Big Ben fait partie de cette liste. Une visite dans les maisons voisines du Parlement sera vous laisser séduire par la grande, finement sculpté de Westminster, construit en 1097 !</p>
+                        <p> Vous pouvez également admirer la fabuleuse "Robing Room" de la Reine, et bien sûr, la célèbre Lords Chamber, où les lois de la Grande-Bretagne sont de vifs débats.</p>
+                    </div>
+                    <div class="block-image">
+                        <img src="../styles/images/Angleterre_11.jpg" alt="Image 10 Angleterre">
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-sup">
+            <span class="footer-item">
+                <a href="../contact.html">Nous contacter</a>
+            </span>
+            <span class="footer-item">
+                <a href="../voyage-tab.html">Lieux visités</a>
+            </span>
+        </div>
+        Copyright© by KBC Nueve
+    </footer>
+    <div class="CanvasMenu">
+        <div class="menu-nav-left"></div>
+        <div class="menu-nav-right">
+            <div class="CanvasMenu-content">
+                <div class="CanvasMenu-header">
+                    Menu
+                    <span class="CanvasMenu-close"></span>
+                </div>
+                <div class="CanvasMenu-nav ">
+                    <a href="voyages.html"><i class="far fa-home"></i> Accueil</a>
+                </div>
+                <div class="CanvasMenu-nav CanvasMenu-cat is-select">
+                    <div class="CanvasMenu-titre">
+                        Prénom <span class="CanvasMenu-open"></span>
+                    </div>
+                    <div class="CanvasMenu-all-item">
+                        <div class="CanvasMenu-item CanvasMenu-child active">
+                            <div class="CanvasMenu-child-name" >
+                                Bastien <span class="CanvasMenu-open-child"></span>
+                            </div>
+                            <div class="CanvasMenu-child-all-item" style="display: block;">
+                                <div class="CanvasMenu-item">
+                                    <a href="voyage4.html">
+                                        États-Unis
+                                    </a>
+                                </div>
+                                <div class="CanvasMenu-item is-select">
+                                    <a href="voyage5.html">
+                                        Angleterre
+                                    </a>
+                                </div>
+                                <div class="CanvasMenu-item">
+                                    <a href="voyage6.html">
+                                        Espagne
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CanvasMenu-item  CanvasMenu-child">
+                            <div class="CanvasMenu-child-name">
+                                Kevin <span class="CanvasMenu-open-child"></span>
+                            </div>
+                            <div class="CanvasMenu-child-all-item">
+                                <div class="CanvasMenu-item">
+                                    <a href="voyage2.html">
+                                        Indonésie
+                                    </a>
+                                </div>
+                                <div class="CanvasMenu-item">
+                                    <a href="voyage1.html">
+                                        Cuba
+                                    </a>
+                                </div>
+                                <div class="CanvasMenu-item">
+                                    <a href="voyage3.html">
+                                        Allemagne
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CanvasMenu-item  CanvasMenu-child">
+                            <div class="CanvasMenu-child-name">
+                                Céline <span class="CanvasMenu-open-child"></span>
+                            </div>
+                            <div class="CanvasMenu-child-all-item">
+                                <div class="CanvasMenu-item">
+                                    <a href="voyage9.html">
+                                        Nouvelle-Zélande
+                                    </a>
+                                </div>
+                                <div class="CanvasMenu-item">
+                                    <a href="voyage7.html">
+                                        Islande
+                                    </a>
+                                </div>
+                                <div class="CanvasMenu-item">
+                                    <a href="voyage8.html">
+                                        Philippines
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="CanvasMenu-nav CanvasMenu-cat">
+                <div class="CanvasMenu-titre">
+                    Continent <span class="CanvasMenu-open"></span>
+                </div>
+                <div class="CanvasMenu-all-item">
+                    <div class="CanvasMenu-item CanvasMenu-child active">
+                        <div class="CanvasMenu-child-name">
+                            Europe <span class="CanvasMenu-open-child"></span>
+                        </div>
+                        <div class="CanvasMenu-child-all-item"  style="display: block;">
+                            <div class="CanvasMenu-item is-select">
+                                <a href="voyage5.html">
+                                    Angleterre
+                                </a>
+                            </div>
+                            <div class="CanvasMenu-item">
+                                <a href="voyage6.html">
+                                    Espagne
+                                </a>
+                            </div>
+                            <div class="CanvasMenu-item">
+                                <a href="voyage3.html">
+                                    Allemagne
+                                </a>
+                            </div>
+                            <div class="CanvasMenu-item">
+                                <a href="voyage1.html">
+                                    Islande
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CanvasMenu-item  CanvasMenu-child">
+                        <div class="CanvasMenu-child-name">
+                            Asie <span class="CanvasMenu-open-child"></span>
+                        </div>
+                        <div class="CanvasMenu-child-all-item">
+                            <div class="CanvasMenu-item">
+                                <a href="voyage2.html">
+                                    Indonésie
+                                </a>
+                            </div>
+                            <div class="CanvasMenu-item">
+                                <a href="voyage8.html">
+                                    Philippines
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CanvasMenu-item  CanvasMenu-child">
+                        <div class="CanvasMenu-child-name">
+                            Océanie <span class="CanvasMenu-open-child"></span>
+                        </div>
+                        <div class="CanvasMenu-child-all-item">
+                            <div class="CanvasMenu-item">
+                                <a href="voyage9.html">
+                                    Nouvelle-Zélande
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CanvasMenu-item  CanvasMenu-child">
+                        <div class="CanvasMenu-child-name">
+                            Amérique <span class="CanvasMenu-open-child"></span>
+                        </div>
+                        <div class="CanvasMenu-child-all-item">
+                            <div class="CanvasMenu-item">
+                                <a href="voyage4.html">
+                                    États-Unis (Amérique)
+                                </a>
+                            </div>
+                            <div class="CanvasMenu-item">
+                                <a href="voyage1.html">
+                                    Cuba
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../styles/js/particles.js"></script>
+<script src="../styles/js/app.js"></script>
+</html>

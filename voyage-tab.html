@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieux visités | Voyages</title>
+    <link rel="shortcut icon" href="earth.ico">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="styles/js/canvas-menu.js"></script>
+    <script type="text/javascript" src="styles/js/AllItemVoyages.js"></script>
+    <link rel="stylesheet" href="styles/css/fa.css">
+    <link rel="stylesheet" href="styles/css/voyages.css">
+    <link rel="stylesheet" href="styles/css/voyages-tab.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="voyages/voyages.html">
+                    <img src="styles/images/earth.png" alt="Voyages">
+                </a>
+            </div>
+            <div class="link">
+                <ul>
+                    <li>
+                        <a href="voyages/voyages.html">Accueil</a>
+                    </li>
+                    <li class="cat-nav-menu" data-type-menu="Prenom" id="prenom-nav-menu">
+                        Prénom <a class="toggle-menu-deroulant" role="button"></a>
+                        <ul class="menu-deroulant">
+                            <li class="title-menu"><h3>Prénom</h3></li>
+                            <li class="menu-is"><span>Bastien</span>
+                                <ul class="menu-deroulant-child">
+                                    <li><a href="voyages/voyage4.html">États-Unis (Amérique)</a></li>
+                                    <li><a href="voyages/voyage5.html">Angleterre</a></li>
+                                    <li><a href="voyages/voyage6.html">Espagne</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-is"><span>Kevin</span>
+                                <ul class="menu-deroulant-child">
+                                    <li><a href="voyages/voyage1.html">Cuba</a></li>
+                                    <li><a href="voyages/voyage2.html">Indonésie</a></li>
+                                    <li><a href="voyages/voyage3.html">Allemagne</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-is"><span>Céline</span>
+                                <ul class="menu-deroulant-child">
+                                    <li><a href="voyages/voyage9.html">Nouvelle-Zélande</a></li>
+                                    <li><a href="voyages/voyage7.html">Islande</a></li>
+                                    <li><a href="voyages/voyage8.html">Philippines</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cat-nav-menu" data-type-menu="Continent" id="continent-nav-menu">
+                        Continent <a class="toggle-menu-deroulant" role="button"></a>
+                        <ul class="menu-deroulant">
+                            <li class="title-menu"><h3>Continent</h3></li>
+                            <li class="menu-is"><span>Europe</span>
+                                <ul class="menu-deroulant-child">
+                                    <li><a href="voyages/voyage5.html">Angleterre</a></li>
+                                    <li><a href="voyages/voyage6.html">Espagne</a></li>
+                                    <li><a href="voyages/voyage3.html">Allemagne</a></li>
+                                    <li><a href="voyages/voyage7.html">Islande</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-is"><span>Asie</span>
+                                <ul class="menu-deroulant-child">
+                                    <li><a href="voyages/voyage2.html">Indonésie</a></li>
+                                    <li><a href="voyages/voyage8.html">Philippines</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-is"><span>Océanie</span>
+                                <ul class="menu-deroulant-child">
+                                    <li><a href="voyages/voyage9.html">Nouvelle-Zélande</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-is"><span>Amérique</span>
+                                <ul class="menu-deroulant-child">
+                                    <li><a href="voyages/voyage4.html">États-Unis (Amérique)</a></li>
+                                    <li><a href="voyages/voyage1.html">Cuba</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="respon">
+                <div class="hamburger-menu">
+                    <i class="far fa-hamburger"></i>
+                </div>
+                <div class="logo-respon">
+                    <a href="voyages/voyages.html">
+                        <img src="styles/images/earth.png" alt="Voyages">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="block">
+            <div class="block-tab">
+                <div class="block-miner">
+                    <h1>Lieux visités</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> Pays/Noms </th>
+                                <th> Bastien </th>
+                                <th> Kevin </th>
+                                <th> Céline </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="pays">Allemagne <span class="flag"><img src="styles/images/Pays/DE.png" alt="Allemagne flag"></span></td>
+                                <td data-cell-label="Bastien"><i class="fas fa-times"></i></td>
+                                <td data-cell-label="Kevin"><i class="fas fa-check"></i></td>
+                                <td data-cell-label="Céline"><i class="fas fa-times"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="pays">Angleterre <span class="flag"><img src="styles/images/Pays/AN.png" alt="Angleterre flag"></span></td>
+                                <td data-cell-label="Bastien"><i class="fas fa-check"></i></td>
+                                <td data-cell-label="Kevin"><i class="fas fa-check"></i></td>
+                                <td data-cell-label="Céline"><i class="fas fa-times"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="pays">Cuba <span class="flag"><img src="styles/images/Pays/CU.png" alt="Cuba flag"></span></td>
+                                <td data-cell-label="Bastien"><i class="fas fa-times"></i></td>
+                                <td data-cell-label="Kevin"><i class="fas fa-times"></i></td>
+                                <td data-cell-label="Céline"><i class="fas fa-times"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="pays">Espagne <span class="flag"><img src="styles/images/Pays/ES.png" alt="Espagne flag"></span></td>
+                                <td data-cell-label="Bastien"><i class="fas fa-check"></i></td>
+                                <td data-cell-label="Kevin"><i class="fas fa-check"></i></td>
+                                <td data-cell-label="Céline"><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="pays">États-Unis <span class="flag"><img src="styles/images/Pays/US.png" alt="États-Unis flag"></span></td>
+                                <td data-cell-label="Bastien"><i class="fas fa-times"></i></td>
+                                <td data-cell-label="Kevin"><i class="fas fa-times"></i></td>
+                                <td data-cell-label="Céline"><i class="fas fa-times"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="pays">Indonésie <span class="flag"><img src="styles/images/Pays/ID.png" alt="Indonésie flag"></span></td>
+                                <td data-cell-label="Bastien"><i class="fas fa-times"></i></td>
+                                <td data-cell-label="Kevin"><i class="fas fa-check"></i></td>
+                                <td data-cell-label="Céline"><i class="fas fa-times"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="pays">Islande <span class="flag"><img src="styles/images/Pays/IS.png" alt="Islande flag"></span></td>
+                                <td data-cell-label="Bastien"><i class="fas fa-times"></i></td>
+                                <td data-cell-label="Kevin"><i class="fas fa-times"></i></td>
+                                <td data-cell-label="Céline"><i class="fas fa-times"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="pays">Nouvelle-Zélande <span class="flag"><img src="styles/images/Pays/NZ.png" alt="Nouvelle-Zélande flag"></span></td>
+                                <td data-cell-label="Bastien"><i class="fas fa-times"></i></td>
+                                <td data-cell-label="Kevin"><i class="fas fa-times"></i></td>
+                                <td data-cell-label="Céline"><i class="fas fa-times"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="pays">Philippines <span class="flag"><img src="styles/images/Pays/PH.png" alt="Philippines flag"></span></td>
+                                <td data-cell-label="Bastien"><i class="fas fa-times"></i></td>
+                                <td data-cell-label="Kevin"><i class="fas fa-times"></i></td>
+                                <td data-cell-label="Céline"><i class="fas fa-times"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-sup">
+            <span class="footer-item">
+                <a href="contact.html">Nous contacter</a>
+            </span>
+            <span class="footer-item">
+                <a href="voyage-tab.html">Lieux visités</a>
+            </span>
+        </div>
+        Copyright© by KBC Nueve
+    </footer>
+    <div class="CanvasMenu">
+        <div class="menu-nav-left"></div>
+        <div class="menu-nav-right">
+            <div class="CanvasMenu-content">
+                <div class="CanvasMenu-header">
+                    Menu
+                    <span class="CanvasMenu-close"></span>
+                </div>
+                <div class="CanvasMenu-nav is-select">
+                    <a href="voyages/voyages.html"><i class="far fa-home"></i> Accueil</a>
+                </div>
+                <div class="CanvasMenu-nav CanvasMenu-cat">
+                    <div class="CanvasMenu-titre">
+                        Prénom <span class="CanvasMenu-open"></span>
+                    </div>
+                    <div class="CanvasMenu-all-item">
+                        <div class="CanvasMenu-item CanvasMenu-child">
+                            <div class="CanvasMenu-child-name">
+                                Bastien <span class="CanvasMenu-open-child"></span>
+                            </div>
+                            <div class="CanvasMenu-child-all-item">
+                                <div class="CanvasMenu-item">
+                                    <a href="voyages/voyage4.html">
+                                        États-Unis
+                                    </a>
+                                </div>
+                                <div class="CanvasMenu-item">
+                                    <a href="voyages/voyage5.html">
+                                        Angleterre
+                                    </a>
+                                </div>
+                                <div class="CanvasMenu-item">
+                                    <a href="voyages/voyage6.html">
+                                        Espagne
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CanvasMenu-item  CanvasMenu-child">
+                            <div class="CanvasMenu-child-name">
+                                Kevin <span class="CanvasMenu-open-child"></span>
+                            </div>
+                            <div class="CanvasMenu-child-all-item">
+                                <div class="CanvasMenu-item">
+                                    <a href="voyages/voyage2.html">
+                                        Indonésie
+                                    </a>
+                                </div>
+                                <div class="CanvasMenu-item">
+                                    <a href="voyages/voyage1.html">
+                                        Cuba
+                                    </a>
+                                </div>
+                                <div class="CanvasMenu-item">
+                                    <a href="voyages/voyage3.html">
+                                        Allemagne
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CanvasMenu-item  CanvasMenu-child">
+                            <div class="CanvasMenu-child-name">
+                                Céline <span class="CanvasMenu-open-child"></span>
+                            </div>
+                            <div class="CanvasMenu-child-all-item">
+                                <div class="CanvasMenu-item">
+                                    <a href="voyages/voyage9.html">
+                                        Nouvelle-Zélande
+                                    </a>
+                                </div>
+                                <div class="CanvasMenu-item">
+                                    <a href="voyages/voyage7.html">
+                                        Islande
+                                    </a>
+                                </div>
+                                <div class="CanvasMenu-item">
+                                    <a href="voyages/voyage8.html">
+                                        Philippines
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="CanvasMenu-nav CanvasMenu-cat">
+                <div class="CanvasMenu-titre">
+                    Continent <span class="CanvasMenu-open"></span>
+                </div>
+                <div class="CanvasMenu-all-item">
+                    <div class="CanvasMenu-item CanvasMenu-child">
+                        <div class="CanvasMenu-child-name">
+                            Europe <span class="CanvasMenu-open-child"></span>
+                        </div>
+                        <div class="CanvasMenu-child-all-item">
+                            <div class="CanvasMenu-item">
+                                <a href="voyages/voyage5.html">
+                                    Angleterre
+                                </a>
+                            </div>
+                            <div class="CanvasMenu-item">
+                                <a href="voyages/voyage6.html">
+                                    Espagne
+                                </a>
+                            </div>
+                            <div class="CanvasMenu-item">
+                                <a href="voyages/voyage3.html">
+                                    Allemagne
+                                </a>
+                            </div>
+                            <div class="CanvasMenu-item">
+                                <a href="voyages/voyage1.html">
+                                    Islande
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CanvasMenu-item  CanvasMenu-child">
+                        <div class="CanvasMenu-child-name">
+                            Asie <span class="CanvasMenu-open-child"></span>
+                        </div>
+                        <div class="CanvasMenu-child-all-item">
+                            <div class="CanvasMenu-item">
+                                <a href="voyages/voyage2.html">
+                                    Indonésie
+                                </a>
+                            </div>
+                            <div class="CanvasMenu-item">
+                                <a href="voyages/voyage8.html">
+                                    Philippines
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CanvasMenu-item  CanvasMenu-child">
+                        <div class="CanvasMenu-child-name">
+                            Océanie <span class="CanvasMenu-open-child"></span>
+                        </div>
+                        <div class="CanvasMenu-child-all-item">
+                            <div class="CanvasMenu-item">
+                                <a href="voyages/voyage9.html">
+                                    Nouvelle-Zélande
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CanvasMenu-item  CanvasMenu-child">
+                        <div class="CanvasMenu-child-name">
+                            Amérique <span class="CanvasMenu-open-child"></span>
+                        </div>
+                        <div class="CanvasMenu-child-all-item">
+                            <div class="CanvasMenu-item">
+                                <a href="voyages/voyage4.html">
+                                    États-Unis (Amérique)
+                                </a>
+                            </div>
+                            <div class="CanvasMenu-item">
+                                <a href="voyages/voyage1.html">
+                                    Cuba
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
