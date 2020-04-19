@@ -3,7 +3,7 @@ html, body{
   padding: 0;
   font-family: 'Indie Flower', cursive;
 }
-h1{
+.h1_Philippines{
   text-align: center;
   font-weight: bolder;
   color: #157A6E;
@@ -188,6 +188,7 @@ h1{
   font-weight: bold;
   opacity: 0;
   transition: ease-in 0.1s;
+  text-align: center;
 }
 .photos_main_top_figcaption:hover{
   opacity: 1;
@@ -224,10 +225,14 @@ h1{
 }
 .histoire_philippines{
   text-align: center;
+  width: 100%;
 }
-.histoire_philippines hr {
-	height: 10px;
-	border: 0;
+.ligne{
+  display: block;
+}
+hr{
+  border: 0;
+  height: 10px;
 	box-shadow: 0 10px 10px -10px #8c8b8b inset;
 }
 .demographie_philippines{
@@ -237,20 +242,37 @@ h1{
   padding: 1rem;
   border:1px dashed #157A6E;
   min-width: 70%;
+  width: 100%;
+  min-width:400px;
+  max-width:700px;
 }
 .table_demographie{
   margin: 0 auto;
+  visibility: visible;
 }
-.table_demographie td{
-  width:15%;
+.table_demographie > tr > td{
+  margin:0px;
+  width:100%;
 }
 .ligne_haut{
   border-bottom: 1px solid grey;
+}
+th{
+  background-color: rgba(31, 36, 33, 0.5);
+  border-radius: 10px;
+  color: white;
+}
+.liste_demographie_philippines{
+  position: absolute;
+  visibility: hidden;
+  list-style: none;
+  padding: 0;
 }
 
 /* ACTIVITES */
 
 h2{
+  font-family: 'Indie Flower', cursive;
   color: black;
   font-weight: bold;
 }
@@ -292,15 +314,50 @@ section{
 @media (max-width:799px) {
   .main_mid_corps{
     font-size: 13px;
-    height: 90%;
+    height: auto;
     margin: 1rem;
-    justify-content: center;
+    justify-content: space-around;
   }
-  .histoire_philippines{
-    flex: 1;
+  .main_mid{
+    height: auto;
+    display: block;
+  }
+  .demographie_philippines{
+    min-width: inherit;
+    margin: 0 0.5rem 0 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+  }
+  .liste_demographie_philippines{
+    position: static;
+    visibility: visible;
+  }
+  .table_demographie{
+    position: absolute;
+    visibility: hidden;
+    left:-999px;
+  }
+}
+@media (max-width:399px) {
+  .main_mid_corps{
+    margin: 0;
+  }
+  .h1_Philippines{
+    font-size: 20px;
+  }
+  .main_mid_corps p{
+    font-size: 10px;
+  }
+  .activite_1, .activite_2, .activite_3{
+    margin: 0 0 0.5rem 0;
+    border-radius: 0;
+    border: 0.5px solid white;
+    padding: 0.2rem;
+  }
+  .slider_philippines{
+    margin: 0;
   }
 }
 @media (max-width:1000px) {
