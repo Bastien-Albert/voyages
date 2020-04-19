@@ -44,6 +44,7 @@ header{
     background-color: var(--color-one);
     z-index: 1000;
     transition: all 0.5s;
+    font-family: 'FiraSans', "Trebuchet MS", Helvetica, sans-serif!important;
 }
 
 
@@ -353,6 +354,7 @@ footer{
     color: white;
     text-align: center;
     padding:10px 0;
+    font-family: 'FiraSans', "Trebuchet MS", Helvetica, sans-serif!important;
 }
 .footer-sup a{
     color: white;

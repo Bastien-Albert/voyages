@@ -1,245 +1,283 @@
-html, body{
-  margin:0;
-  padding: 0;
+html, body {
+    margin: 0;
+    padding: 0;
 }
-.main_top_NZ{
-  background-image: url("../images/NZ_Background.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-  background-attachment: fixed;
-  z-index: 2;
+
+.main_top_NZ {
+    background-image: url("../images/NZ_Background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    background-attachment: fixed;
+    z-index: 2;
 }
-.titre_NZ{
-  background: linear-gradient(to top, rgba(87, 100, 144,0.8),rgba(87, 100, 144,0.2), rgba(87, 100, 144,0));
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.titre_NZ {
+    background: linear-gradient(to top, rgba(87, 100, 144, 0.8), rgba(87, 100, 144, 0.2), rgba(87, 100, 144, 0));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-h1{
-  font-family: 'Merienda', cursive;
-  font-size: 50px;
-  color:white;
-  text-shadow: 1px 1px 5px black;
-  text-align: center;
+
+h1 {
+    font-family: 'Merienda', cursive;
+    font-size: 50px;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    text-align: center;
 }
-h1:hover{
-  animation-name: pulse;
-  animation-duration: 0.3s;
+
+h1:hover {
+    animation-name: pulse;
+    animation-duration: 0.3s;
 }
-h2{
-  font-family: 'Merienda', cursive;
-  margin: 2rem 0 0.5rem 1rem;
+
+h2 {
+    font-family: 'Merienda', cursive;
+    margin: 2rem 0 0.5rem 1rem;
 }
-h2:hover{
-  text-shadow: 1px 1px 2px #3FE0BE;
+
+h2:hover {
+    text-shadow: 1px 1px 2px #3FE0BE;
 }
-.h2_autres_NZ{
-  margin: 2rem 0 2rem 0;
+
+.h2_autres_NZ {
+    margin: 2rem 0 2rem 0;
 }
+
 /* ACTIVITES */
 
-.main_corps_NZ{
-  font-family: 'PT Sans', sans-serif;
-  max-width: 1400px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  border-left: 1px solid #576490;
-  border-right: 1px solid #576490;
-  z-index: 1;
-}
-.activites_NZ{
-  width:75%;
-  background-color: rgba(224, 225, 249, 0.5);
-}
-.activite_NZ{
-  margin: 0 2rem 0 2rem;
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-}
-.activite_NZ p{
-  margin: 1.5rem 0 1.5rem 0;
-}
-.activite_figure_NZ{
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  position: relative;
-  margin: 0;
-  width: 50%;
-  align-self: center;
-  transition: transform ease-in-out 0.1s;
-}
-.activite_figure_NZ img{
-  width:100%;
-  box-shadow: 0 0 1px 3px #0D2144;
-}
-.activite_figcaption_NZ{
-  position: absolute;
-  opacity: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(209, 210, 249, 0.7);
-  transition: all ease-in-out 0.1s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  color:#1F2432;
-}
-.activite_figure_NZ:hover .activite_figcaption_NZ{
-  opacity: 1;
-}
-.activite_figure_NZ:hover{
-  transform: scale(1.05);
-}
-.hr_activites_NZ{
-  margin: 2rem auto 1rem auto;
-  width: 90%;
-  border: 0;
-  height: 3px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(85, 89, 153, 0.9), rgba(255, 255, 255, 0));
-}
-.Autres_NZ{
-  width: 25%;
-  background-color: rgba(85, 89, 153, 0.5);
-}
-.Autres_NZ h2{
-  text-align: center;
-}
-.demographie_NZ ul{
-  list-style: none;
-  padding: 0;
-  font-size: 13px;
-}
-.demographie_NZ li{
-  margin: 0.5rem 1rem 0.5rem 2rem;
-  border-radius: 10px;
-  transition: all ease-in-out 0.05s;
-}
-.demographie_NZ li:hover .fa-leaf{
-  color:#3FE0BE;
-  transition: all ease-in-out 0.005s;
-}
-.demographie_NZ li:hover{
-  background:rgba(255, 255, 255, 0.5);
-}
-.gallerie_NZ{
-  display: flex;
-  flex-direction: column;
-}
-.figure_gallerie_NZ{
-  margin:0 1rem 2rem 1rem;
-}
-.figure_gallerie_NZ{
-  position: relative;
-  display: flex;
-}
-.figure_gallerie_NZ img{
-  width:100%;
-  height: 100%;
-  border-radius: 10px;
-  box-shadow: 0 0 2px 2px grey;
-  transition: all ease-in-out 0.1s;
-}
-.figure_gallerie_NZ figcaption{
-  opacity: 0;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  background:rgba(255, 255, 255, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  transition: all ease-in-out 0.1s;
-  border-radius: 10px;
-}
-.figure_gallerie_NZ:hover img{
-  transform: scale(1.05);
-}
-.figure_gallerie_NZ:hover  .gallerie_figcaption_NZ{
-  opacity: 1;
-  transform: scale(1.05);
-}
-@media (max-width:799px) {
-  h1{
-    font-size: 30px;
-  }
-  h2{
-    font-size: 18px;
-    margin: 0.5rem 0 0.5rem 0;
-    text-align: center;
-  }
-  .main_corps_NZ{
-    flex-direction: column;
-    font-size: 14px;
-  }
-  .activites_NZ{
-    width: 100%;
-  }
-  .Autres_NZ{
-    width:100%;
-  }
-  .demographie_NZ{
-    text-align: center;
-  }
-  .gallerie_NZ{
+.main_corps_NZ {
+    font-family: 'PT Sans', sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    border-left: 1px solid #576490;
+    border-right: 1px solid #576490;
+    z-index: 1;
+}
+
+.activites_NZ {
+    width: 75%;
+    background-color: rgba(224, 225, 249, 0.5);
+}
+
+.activite_NZ {
+    margin: 0 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.activite_NZ p {
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.activite_figure_NZ {
+    display: flex;
     justify-content: center;
-  }
-  .figure_gallerie_NZ{
-    min-width: 150px;
-    width:20%;
-  }
+    align-items: center;
+    position: relative;
+    margin: 0;
+    width: 50%;
+    align-self: center;
+    transition: transform ease-in-out 0.1s;
+}
+
+.activite_figure_NZ img {
+    width: 100%;
+    box-shadow: 0 0 1px 3px #0D2144;
+}
+
+.activite_figcaption_NZ {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(209, 210, 249, 0.7);
+    transition: all ease-in-out 0.1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #1F2432;
+}
+
+.activite_figure_NZ:hover .activite_figcaption_NZ {
+    opacity: 1;
+}
+
+.activite_figure_NZ:hover {
+    transform: scale(1.05);
+}
+
+.hr_activites_NZ {
+    margin: 2rem auto 1rem auto;
+    width: 90%;
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(85, 89, 153, 0.9), rgba(255, 255, 255, 0));
+}
+
+.Autres_NZ {
+    width: 25%;
+    background-color: rgba(85, 89, 153, 0.5);
+}
+
+.Autres_NZ h2 {
+    text-align: center;
+}
+
+.demographie_NZ ul {
+    list-style: none;
+    padding: 0;
+    font-size: 13px;
+}
+
+.demographie_NZ li {
+    margin: 0.5rem 1rem 0.5rem 2rem;
+    border-radius: 10px;
+    transition: all ease-in-out 0.05s;
+}
+
+.demographie_NZ li:hover .fa-leaf {
+    color: #3FE0BE;
+    transition: all ease-in-out 0.005s;
+}
+
+.demographie_NZ li:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.gallerie_NZ {
+    display: flex;
+    flex-direction: column;
+}
+
+.figure_gallerie_NZ {
+    margin: 0 1rem 2rem 1rem;
+}
+
+.figure_gallerie_NZ {
+    position: relative;
+    display: flex;
+}
+
+.figure_gallerie_NZ img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px grey;
+    transition: all ease-in-out 0.1s;
+}
+
+.figure_gallerie_NZ figcaption {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: all ease-in-out 0.1s;
+    border-radius: 10px;
+}
+
+.figure_gallerie_NZ:hover img {
+    transform: scale(1.05);
+}
+
+.figure_gallerie_NZ:hover .gallerie_figcaption_NZ {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+@media (max-width: 799px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin: 0.5rem 0 0.5rem 0;
+        text-align: center;
+    }
+
+    .main_corps_NZ {
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    .activites_NZ {
+        width: 100%;
+    }
+
+    .Autres_NZ {
+        width: 100%;
+    }
+
+    .demographie_NZ {
+        text-align: center;
+    }
+
+    .gallerie_NZ {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .figure_gallerie_NZ {
+        min-width: 150px;
+        width: 20%;
+    }
 }
 
 /*ANIMATION*/
 
 @-webkit-keyframes pulse {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
 
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
 
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
 }
 
 @keyframes pulse {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
 
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
 
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
 }
 
 .pulse {
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
 }
