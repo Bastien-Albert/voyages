@@ -246,4 +246,39 @@
   .liste_nav_islande{
     font-size: 10px;
   }
+  .body-islande{
+    font-size: 13px;
+  }
+  .h2_island{
+    font-size: 30px;
+  }
+}
+@media (max-width:399px) {
+  .liste_nav_islande{
+    width: 100%;
+    flex-direction: column;
+  }
+  .liste_nav_islande > li{
+    flex: 1;
+    padding: 0.2rem;
+  }
+  .body-islande{
+    text-align: center;
+  }
+  .caracteristiques-pays, .activite, .activite_contenu{
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+  .demographie ul{
+    list-style: none;
+    padding: 0;
+    white-space: normal;
+  }
+  .h3_islande{
+    padding: 0;
+  }
+  .gallerie_grid{
+    display: flex;
+    flex-direction: column;
+  }
 }

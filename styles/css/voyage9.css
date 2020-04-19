@@ -19,14 +19,30 @@ html, body{
   align-items: center;
 }
 h1{
-
+  font-family: 'Merienda', cursive;
+  font-size: 50px;
+  color:white;
+  text-shadow: 1px 1px 5px black;
+  text-align: center;
+}
+h1:hover{
+  animation-name: pulse;
+  animation-duration: 0.3s;
 }
 h2{
+  font-family: 'Merienda', cursive;
   margin: 2rem 0 0.5rem 1rem;
+}
+h2:hover{
+  text-shadow: 1px 1px 2px #3FE0BE;
+}
+.h2_autres_NZ{
+  margin: 2rem 0 2rem 0;
 }
 /* ACTIVITES */
 
 .main_corps_NZ{
+  font-family: 'PT Sans', sans-serif;
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
@@ -100,6 +116,7 @@ h2{
 .demographie_NZ ul{
   list-style: none;
   padding: 0;
+  font-size: 13px;
 }
 .demographie_NZ li{
   margin: 0.5rem 1rem 0.5rem 2rem;
@@ -118,18 +135,24 @@ h2{
   flex-direction: column;
 }
 .figure_gallerie_NZ{
-  margin:1rem 1rem 0 1rem;
-  position:relative;
+  margin:0 1rem 2rem 1rem;
+}
+.figure_gallerie_NZ{
+  position: relative;
+  display: flex;
 }
 .figure_gallerie_NZ img{
   width:100%;
   height: 100%;
   border-radius: 10px;
+  box-shadow: 0 0 2px 2px grey;
+  transition: all ease-in-out 0.1s;
 }
 .figure_gallerie_NZ figcaption{
   opacity: 0;
   position: absolute;
-  top: 50%;
+  bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
   background:rgba(255, 255, 255, 0.5);
@@ -138,7 +161,85 @@ h2{
   align-items: center;
   font-weight: bold;
   transition: all ease-in-out 0.1s;
+  border-radius: 10px;
+}
+.figure_gallerie_NZ:hover img{
+  transform: scale(1.05);
 }
 .figure_gallerie_NZ:hover  .gallerie_figcaption_NZ{
   opacity: 1;
+  transform: scale(1.05);
+}
+@media (max-width:799px) {
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 18px;
+    margin: 0.5rem 0 0.5rem 0;
+    text-align: center;
+  }
+  .main_corps_NZ{
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .activites_NZ{
+    width: 100%;
+  }
+  .Autres_NZ{
+    width:100%;
+  }
+  .demographie_NZ{
+    text-align: center;
+  }
+  .gallerie_NZ{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .figure_gallerie_NZ{
+    min-width: 150px;
+    width:20%;
+  }
+}
+
+/*ANIMATION*/
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
 }
