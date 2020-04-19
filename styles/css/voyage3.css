@@ -14,9 +14,10 @@
 @font-face{font-family:'FiraSans';src:url('../fonts/FiraSans-Medium.otf');font-weight:bold}
 @font-face{font-family:'FiraSans';src:url('../fonts/FiraSans-Italic.otf');font-weight:normal;font-style:italic}
 @font-face{font-family:'FiraSans';src:url('../fonts/FiraSans-UltraLight.otf');font-weight:300}
-@font-face {font-family:'CreamCake';src: url('../fonts/Cream Cake.ttf');font-weight: normal;
+@font-face {font-family:'CreamCake';src: url('../fonts/Cream Cake.ttf');font-weight: normal}
+@font-face {font-family:'Germany';src: url('../fonts/Germany Slime Gothic.otf');font-weight: normal}
 
-}
+
 html,body{
     margin: 0;
     padding: 0;
@@ -41,7 +42,7 @@ a{
 header{
     position: sticky;
     top:0;
-    background-color: var(--color-one);
+    background-color: #2d3238;
     z-index: 1000;
     transition: all 0.5s;
 }
@@ -355,224 +356,176 @@ nav .link a.toggle-menu-deroulant{
     font-size: initial;
 }
 /*main*/
-main {
-    width: auto;
-
-}
-.top-block h1{
-    font-family: CreamCake;
-    color: white;
-    font-size: 100px;
-    text-shadow: 2px 0 0 black, 2px 2px 0 black, 0 2px 0 black, -2px 2px 0 black, -2px 0 0 black, -2px -2px 0 black, 0 -2px 0 black, 2px -2px 0 black;
-}
 
 .block-image{
-    overflow: hidden;
-    max-width: 100%;
-    height: 100%;
-    background-image: url("../images/cuba-top.jpg");
+    background-image: url("../images/munich.jpg");
+    background-position: right 0 bottom;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    height:700px;
 }
 
-.top-block{
+.block-container{
+    background:white;
+    max-width: 1850px;
+    margin:auto;
+    margin-bottom:100px;
+    border-radius: 5px;
+
+}
+.city-name{
+    display: flex;
+    justify-content: center;
+    font-family: Germany;
+    font-size: 90px;
+    max-width: 500px;
+    max-height: 200px;
+    margin: auto;
     text-align: center;
-    max-width: 700px;
+}
+.Sommaire{
+    max-width: 400px;
+    justify-content: center;
+    margin: 100px auto;
+    background: black;
+    color:#509bf5;
+    border-radius: 3px;
+    padding: 10px;
+
+}
+.lieu-title, .google-map {
+    text-align: center;
+}
+
+.explication{
+    margin: 10px;
+}
+.photo-lieu{
+text-align: center;
+}
+.photo-lieu img{
+    max-width:1500px;
+    height: auto;
     margin: auto;
 }
-@-webkit-keyframes jackInTheBox {
-    from {
-        opacity: 0;
-        -webkit-transform: scale(0.1) rotate(30deg);
-        transform: scale(0.1) rotate(30deg);
-        -webkit-transform-origin: center bottom;
-        transform-origin: center bottom;
-    }
-
-    50% {
-        -webkit-transform: rotate(-10deg);
-        transform: rotate(-10deg);
-    }
-
-    70% {
-        -webkit-transform: rotate(3deg);
-        transform: rotate(3deg);
-    }
-
-    to {
-        opacity: 1;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
+ #firstimage {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+ #firstimage:hover {
+    filter: none;
+    -webkit-filter: none;
+    transition: 1s filter;
+}
+#secondimage {
+    filter: grayscale(1);
+    -webkit-filter:grayscale(1);
+    max-height: 800px;
+}
+#secondimage:hover {
+    filter: none;
+    -webkit-filter: none;
+    transition: 1s filter;
+}
+#thirdimage{
+    filter: brightness(20%);
+    -webkit-filter: brightness(20%);
+}
+#thirdimage:hover {
+    filter: none;
+    -webkit-filter: none;
+    transition: 1s filter;
+}
+#fourthimage{
+    transform: scale(0.95);
+}
+#fourthimage:hover{
+    transform: scale(1);
 }
 
-@keyframes jackInTheBox {
-    from {
-        opacity: 0;
-        -webkit-transform: scale(0.1) rotate(30deg);
-        transform: scale(0.1) rotate(30deg);
-        -webkit-transform-origin: center bottom;
-        transform-origin: center bottom;
-    }
-
-    50% {
-        -webkit-transform: rotate(-10deg);
-        transform: rotate(-10deg);
-    }
-
-    70% {
-        -webkit-transform: rotate(3deg);
-        transform: rotate(3deg);
-    }
-
-    to {
-        opacity: 1;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
+.block-container h2{
+    text-align: center;
 }
 
-.jackInTheBox {
-    -webkit-animation-name: jackInTheBox;
-    animation-name: jackInTheBox;
-    animation-duration:0.4s;
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+    max-height: 600px;
 }
-
-.block-lieu{
-    width: 100%;
-
-
+.carousel-item {
+    flex: 1 0 250px;
+    margin-left: 1rem;
+    scroll-snap-align: start;
 }
-.vertical-sommaire {
-    display: block;
-    max-width: 600px;
-    margin:10px auto;
+.carousel ul{
+    list-style: none;
 }
-
-.vertical-sommaire a {
-    background-color:white;
-    color: black;
-    display: block;
-    padding: 12px;
-    text-decoration: none;
+caption{
+    justify-content: center;
 }
-
-.vertical-sommaire a:hover {
-    background-color: #3b5aa3;
-    color:white;
-}
-
-.vertical-sommaire a.active {
-    background:red;
-    color: white;
-}
-.main-block{
-    /*border: 1px solid #141414;*/
-    margin: 50px auto ;
-    max-width: 1400px;
-    background: #e5e5e5;
-    border: 1px solid #dfdfdf;
-    padding: 15px;
-
-
-}
-@-webkit-keyframes slideInLeft {
-    from {
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-
-    to {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@keyframes slideInLeft {
-    from {
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-
-    to {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-.slideInLeft {
-    -webkit-animation-name: slideInLeft;
-    animation-name: slideInLeft;
-    animation-duration: 0.80s;
-}
-@-webkit-keyframes slideInRight {
-    from {
-        -webkit-transform: translate3d(100%, 0, 0);
-        transform: translate3d(100%, 0, 0);
-        visibility: visible;
-    }
-
-    to {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        -webkit-transform: translate3d(100%, 0, 0);
-        transform: translate3d(100%, 0, 0);
-        visibility: visible;
-    }
-
-    to {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-.slideInRight {
-    -webkit-animation-name: slideInRight;
-    animation-name: slideInRight;
-    animation-duration: 0.80s;
-}
-
-.help-display {
-    display: inline-flex;
-    max-width: 1300px;
-}
-.help-display h1{
-    font-size: 60px;
-}
-.help-display img{
-    padding: 0 5px;
-    max-width: 600px;
-}
-.help-display img:hover{
-    transform: scale(1.05);
-}
-.item-space{
-    margin: 0 15px;
-}
-#height-too img{
+.inner-scroll-photo img{
     max-height: 500px;
-    overflow: hidden;
+    width: auto;
+}
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3d4852;
+    border-radius: 3px;
+}
+.google-map iframe {
+    max-width: 600px;
+    max-height: 450px;
+    margin: 30px;
+
+}
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    animation-duration: 3s;
 }
 /*footer*/
 footer{
-    background-color:var(--color-one);
+    background-color: #2d3238;
     margin-top:auto;
     color: white;
     text-align: center;
-    padding:10px 0;
+    margin: auto 0;
 }
 
 /*reponsive*/
 
 @media screen and (max-width: 950px)
 {
-
     .logo{
         display: none;
     }
@@ -621,11 +574,23 @@ footer{
 
     }
     .block-image{
-        background: url("../images/flagofcuba.png");
-        overflow: hidden;
-        max-width: 100%;
-        height: 100%;
+        display: none;
+    }
+}
+@media screen and (max-width: 1510px){
+    .photo-lieu img{
+        width:100%;
+
+    }
+    .google-map iframe{
+        width: 100%;
+        margin:auto;
+    }
+    .block-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
-
 }
+
