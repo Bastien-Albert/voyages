@@ -218,13 +218,12 @@ h1{
   background: rgba(255,255,255, 0.7);
   padding: 1rem;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   border: 1px solid rgba(31, 36, 33, 0.5);
 }
 .histoire_philippines{
-    text-align: center;
+  text-align: center;
 }
 .histoire_philippines hr {
 	height: 10px;
@@ -247,11 +246,6 @@ h1{
 }
 .ligne_haut{
   border-bottom: 1px solid grey;
-}
-@media (max-width:799px) {
-  .main_mid_corps{
-    font-size: 10px;
-  }
 }
 
 /* ACTIVITES */
@@ -294,6 +288,20 @@ section{
 }
 .activite_1:hover .activite_text, .activite_2:hover .activite_text, .activite_3:hover .activite_text{
   opacity: 1;
+}
+@media (max-width:799px) {
+  .main_mid_corps{
+    font-size: 13px;
+    height: 90%;
+    margin: 1rem;
+    justify-content: center;
+  }
+  .histoire_philippines{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 @media (max-width:1000px) {
   .activites{
