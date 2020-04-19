@@ -9,6 +9,7 @@
     <script type="text/javascript" src="../styles/js/canvas-menu.js"></script>
     <script type="text/javascript" src="../styles/js/Sommaire.js"></script>
     <link rel="stylesheet" href="../styles/css/fa.css">
+    <link rel="stylesheet" href="../styles/css/voyages.css">
     <link rel="stylesheet" href="../styles/css/voyage4.css">
 </head>
 <body>
@@ -30,23 +31,23 @@
                             <li class="title-menu"><h3>Prénom</h3></li>
                             <li class="menu-is"><span>Bastien</span>
                                 <ul class="menu-deroulant-child">
-                                    <li><a href="#">États-Unis (Amérique)</a></li>
-                                    <li><a href="#">Angleterre</a></li>
-                                    <li><a href="#">Espagne</a></li>
+                                    <li><a href="voyage4.html">États-Unis (Amérique)</a></li>
+                                    <li><a href="voyage5.html">Angleterre</a></li>
+                                    <li><a href="voyage6.html">Espagne</a></li>
                                 </ul>
                             </li>
                             <li class="menu-is"><span>Kevin</span>
                                 <ul class="menu-deroulant-child">
-                                    <li><a href="#">Cuba</a></li>
-                                    <li><a href="#">Indonésie</a></li>
-                                    <li><a href="#">Allemagne</a></li>
+                                    <li><a href="voyage1.html">Cuba</a></li>
+                                    <li><a href="voyage2.html">Indonésie</a></li>
+                                    <li><a href="voyage3.html">Allemagne</a></li>
                                 </ul>
                             </li>
                             <li class="menu-is"><span>Céline</span>
                                 <ul class="menu-deroulant-child">
-                                    <li><a href="#">Nouvelle-Zélande</a></li>
-                                    <li><a href="#">Islande</a></li>
-                                    <li><a href="#">Philippines</a></li>
+                                    <li><a href="voyage9.html">Nouvelle-Zélande</a></li>
+                                    <li><a href="voyage7.html">Islande</a></li>
+                                    <li><a href="voyage8.html">Philippines</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -57,27 +58,27 @@
                             <li class="title-menu"><h3>Continent</h3></li>
                             <li class="menu-is"><span>Europe</span>
                                 <ul class="menu-deroulant-child">
-                                    <li><a href="#">Angleterre</a></li>
-                                    <li><a href="#">Espagne</a></li>
-                                    <li><a href="#">Allemagne</a></li>
-                                    <li><a href="#">Islande</a></li>
+                                    <li><a href="voyage5.html">Angleterre</a></li>
+                                    <li><a href="voyage6.html">Espagne</a></li>
+                                    <li><a href="voyage3.html">Allemagne</a></li>
+                                    <li><a href="voyage7.html">Islande</a></li>
                                 </ul>
                             </li>
                             <li class="menu-is"><span>Asie</span>
                                 <ul class="menu-deroulant-child">
-                                    <li><a href="#">Indonésie</a></li>
-                                    <li><a href="#">Philippines</a></li>
+                                    <li><a href="voyage2.html">Indonésie</a></li>
+                                    <li><a href="voyage8.html">Philippines</a></li>
                                 </ul>
                             </li>
                             <li class="menu-is"><span>Océanie</span>
                                 <ul class="menu-deroulant-child">
-                                    <li><a href="#">Nouvelle-Zélande</a></li>
+                                    <li><a href="voyage9.html">Nouvelle-Zélande</a></li>
                                 </ul>
                             </li>
                             <li class="menu-is"><span>Amérique</span>
                                 <ul class="menu-deroulant-child">
-                                    <li><a href="#">États-Unis (Amérique)</a></li>
-                                    <li><a href="#">Cuba</a></li>
+                                    <li><a href="voyage4.html">États-Unis (Amérique)</a></li>
+                                    <li><a href="voyage1.html">Cuba</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -101,8 +102,6 @@
             <div class="height">
                 <div class="col h-100 p-4">
                     <h1 class="page-title">Etats-Unis</h1>
-                </div>
-                <div class="col h-100 w-100">
                 </div>
             </div>
         </div>
@@ -309,27 +308,33 @@
                     Menu
                     <span class="CanvasMenu-close"></span>
                 </div>
-                <div class="CanvasMenu-nav is-select">
-                    <a href="../voyages/voyages.html"><i class="far fa-home"></i> Accueil</a>
+                <div class="CanvasMenu-nav ">
+                    <a href="voyages.html"><i class="far fa-home"></i> Accueil</a>
                 </div>
-                <div class="CanvasMenu-nav CanvasMenu-cat">
+                <div class="CanvasMenu-nav CanvasMenu-cat is-select">
                     <div class="CanvasMenu-titre">
                         Prénom <span class="CanvasMenu-open"></span>
                     </div>
                     <div class="CanvasMenu-all-item">
                         <div class="CanvasMenu-item CanvasMenu-child">
-                            <div class="CanvasMenu-child-name">
+                            <div class="CanvasMenu-child-name active" >
                                 Bastien <span class="CanvasMenu-open-child"></span>
                             </div>
-                            <div class="CanvasMenu-child-all-item">
-                                <div class="CanvasMenu-item">
-                                    États-Unis
+                            <div class="CanvasMenu-child-all-item" style="display: block;">
+                                <div class="CanvasMenu-item is-select">
+                                    <a href="voyage4.html">
+                                        États-Unis
+                                    </a>
                                 </div>
                                 <div class="CanvasMenu-item">
-                                    Angleterre
+                                    <a href="voyage5.html">
+                                        Angleterre
+                                    </a>
                                 </div>
                                 <div class="CanvasMenu-item">
-                                    Espagne
+                                    <a href="voyage6.html">
+                                        Espagne
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -339,13 +344,19 @@
                             </div>
                             <div class="CanvasMenu-child-all-item">
                                 <div class="CanvasMenu-item">
-                                    Indonésie
+                                    <a href="voyage2.html">
+                                        Indonésie
+                                    </a>
                                 </div>
                                 <div class="CanvasMenu-item">
-                                    Cuba
+                                    <a href="voyage1.html">
+                                        Cuba
+                                    </a>
                                 </div>
                                 <div class="CanvasMenu-item">
-                                    Allemagne
+                                    <a href="voyage3.html">
+                                        Allemagne
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -355,13 +366,19 @@
                             </div>
                             <div class="CanvasMenu-child-all-item">
                                 <div class="CanvasMenu-item">
-                                    Nouvelle-Zélande
+                                    <a href="voyage9.html">
+                                        Nouvelle-Zélande
+                                    </a>
                                 </div>
                                 <div class="CanvasMenu-item">
-                                    Islande
+                                    <a href="voyage7.html">
+                                        Islande
+                                    </a>
                                 </div>
                                 <div class="CanvasMenu-item">
-                                    Philippines
+                                    <a href="voyage8.html">
+                                        Philippines
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -379,16 +396,24 @@
                         </div>
                         <div class="CanvasMenu-child-all-item">
                             <div class="CanvasMenu-item">
-                                Angleterre
+                                <a href="voyage5.html">
+                                    Angleterre
+                                </a>
                             </div>
                             <div class="CanvasMenu-item">
-                                Espagne
+                                <a href="voyage6.html">
+                                    Espagne
+                                </a>
                             </div>
                             <div class="CanvasMenu-item">
-                                Allemagne
+                                <a href="voyage3.html">
+                                    Allemagne
+                                </a>
                             </div>
                             <div class="CanvasMenu-item">
-                                Islande
+                                <a href="voyage1.html">
+                                    Islande
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -398,10 +423,14 @@
                         </div>
                         <div class="CanvasMenu-child-all-item">
                             <div class="CanvasMenu-item">
-                                Indonésie
+                                <a href="voyage2.html">
+                                    Indonésie
+                                </a>
                             </div>
                             <div class="CanvasMenu-item">
-                                Philippines
+                                <a href="voyage8.html">
+                                    Philippines
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -411,20 +440,26 @@
                         </div>
                         <div class="CanvasMenu-child-all-item">
                             <div class="CanvasMenu-item">
-                                Nouvelle-Zélande
+                                <a href="voyage9.html">
+                                    Nouvelle-Zélande
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="CanvasMenu-item  CanvasMenu-child">
+                    <div class="CanvasMenu-item  CanvasMenu-child active">
                         <div class="CanvasMenu-child-name">
                             Amérique <span class="CanvasMenu-open-child"></span>
                         </div>
-                        <div class="CanvasMenu-child-all-item">
-                            <div class="CanvasMenu-item">
-                                États-Unis (Amérique)
+                        <div class="CanvasMenu-child-all-item" style="display: block;">
+                            <div class="CanvasMenu-item is-select">
+                                <a href="voyage4.html">
+                                    États-Unis (Amérique)
+                                </a>
                             </div>
                             <div class="CanvasMenu-item">
-                                Cuba
+                                <a href="voyage1.html">
+                                    Cuba
+                                </a>
                             </div>
                         </div>
                     </div>
