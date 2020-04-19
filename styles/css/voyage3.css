@@ -167,25 +167,7 @@ caption{
 
 /*reponsive*/
 
-@media screen and (max-width: 1000px){
-    .help-display{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .help-display img{
-        width: 100%;
-    }
-
-}
 @media screen and (max-width: 1300px){
-    .repsonsiveplz{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-
-    }
     .block-image{
         display: none;
     }

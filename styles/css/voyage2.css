@@ -135,39 +135,9 @@ img {
     to {opacity: 1}
 }
 
-
-
 /*reponsive*/
 
 
-@media screen and (max-width: 1000px){
-    .help-display{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .help-display img{
-        width: 100%;
-    }
-
-}
-@media screen and (max-width: 1300px){
-    .repsonsiveplz{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-
-    }
-    .block-image{
-        background: url("../images/flagofcuba.png");
-        overflow: hidden;
-        max-width: 100%;
-        height: 100%;
-    }
-
-
-}
 @media only screen and (max-width: 300px) {
     .prev, .next,.caption p {font-size: 11px}
 }
@@ -175,7 +145,6 @@ img {
 @media screen and (max-width:515px) {
     .caption-slide{
         display: none;
-
     }
 
 }
