@@ -1,0 +1,319 @@
+
+/*header*/
+header{
+    background-color: white;
+    z-index: 100000;
+    border-bottom: var(--border-bastien);
+    transition: none;
+}
+nav{
+    color: black;
+}
+nav .link{
+    color: black;
+}
+
+
+nav .link a{
+    color: black;
+}
+.hamburger-menu {
+    color: black;
+}
+
+/*main*/
+.select {
+    padding-bottom: 10px;
+}
+.select-continent{
+    background: white;
+    position: relative;
+    padding: 5px;
+    border-bottom: var(--border-bastien);
+}
+.select-title span{
+    cursor: pointer;
+}
+.block-item-cat-list{
+    max-width: 300px;
+    margin: auto;
+}
+.select-title span:after {
+    font-family: 'Font Awesome 5 Pro';
+    font-size: inherit;
+    font-style: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f0d7";
+    font-weight: 900;
+    margin-left: .2em;
+    unicode-bidi: isolate;
+}
+.select-continent .select-title{
+    text-align: center;
+}
+.select-continent h3{
+    margin: 0;
+    background: var(--color-filter);
+    text-align: center;
+}
+.select-content {
+    position: absolute;
+    z-index: 10;
+    background: white;
+    max-width: 300px;
+    width: 100%;
+    border-top: solid var(--var-color);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.35);
+}
+
+.select-content{
+    display: none;
+}
+.menu-active .select-content{
+    display: block;
+    opacity: 0;
+}
+.selector {
+    position: sticky;
+    top: 73px;
+    z-index: 999;
+    animation: rubberBand 1s backwards;
+}
+.list-item {
+    margin: 10px;
+}
+.select-content:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -8px;
+    right: 50%;
+    margin-left: -8px;
+    border: 8px solid transparent;
+    border-top-width: 0;
+    border-bottom-color: #47a7eb;
+}
+.image-header h1, .image-header h3{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.image-header {
+    background-image: url("../images/espagne_1.jpg");
+    background-size: cover;
+    height: 500px;
+    background-attachment: fixed;
+}
+.block-inner:nth-child(3) .image-header {
+    background-image: url("../images/espagne.jpg");
+}
+.block-inner:nth-child(4) .image-header {
+    background-image: url("../images/espagne_3.jpg");
+}
+.block-inner:nth-child(5) .image-header{
+    background-image: url("../images/espagne_4.jpg");
+}
+.block-inner:nth-child(6)  .image-header {
+    background-image: url("../images/espagne_5.jpg");
+}
+.block-inner:nth-child(7)  .image-header {
+    background-image: url("../images/espagne_6.jpg");
+}
+.block-inner:nth-child(8)  .image-header {
+    background-image: url("../images/espagne_7.jpg");
+}
+.block-inner:nth-child(9)  .image-header {
+    background-image: url("../images/espagne_8.jpg");
+}
+.block-inner:nth-child(10)  .image-header {
+    background-image: url("../images/espagne_9.jpg");
+}
+.block-inner:nth-child(11)  .image-header {
+    background-image: url("../images/espagne_10.jpg");
+}
+.block-inner:nth-child(12)  .image-header {
+    background-image: url("../images/espagne_11.jpg");
+}
+.image-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image-content-inner {
+    max-width:500px ;
+    max-height:300px ;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff70;
+    border-radius: 5px;
+    padding: 10px;
+    animation: bounceIn 1s backwards;
+}
+.block-text{
+    text-align: center;
+    max-width: var(--var-max-width);
+    margin: 20px auto;
+    background-color: white;
+    border: var(--border-bastien);
+    padding: 10px;
+}
+.block-inner:nth-child(even)   .block-text{
+    animation: bounceInRight 1s backwards;
+}
+.block-inner:nth-child(odd) .block-text{
+    animation: bounceInLeft 1s backwards;
+}
+.block-text ul{
+    text-align: left;
+}
+
+#first p{
+    margin: 0;
+}
+.block-conseil {
+    border: 2px solid rgb(235, 239, 243);
+    border-radius: 4px;
+    position: relative;
+}
+.block-conseil h4{
+    margin: 0;
+    position: absolute;
+    top: -19px;
+    text-align: center;
+    left: 0;
+    width: 100%;
+}
+.conseil-outer {
+    background: #fff;
+    color: #333;
+    padding: 0 10px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.conseil-inner {
+    border: 2px solid rgb(235, 239, 243);
+    border-radius: 4px;
+    line-height: 30px;
+    padding: 0 18px;
+    display: inline-block;
+}
+@keyframes bounceInRight {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    from {
+        opacity: 0;
+        transform: translate3d(3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(-25px, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(10px, 0, 0);
+    }
+
+    90% {
+        transform: translate3d(-5px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bounceInLeft {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(-3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(25px, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    90% {
+        transform: translate3d(5px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes bounceIn {
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    0% {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    20% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    40% {
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+
+    80% {
+        transform: scale3d(0.97, 0.97, 0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+/*reponsive*/
+
+@media screen and (max-width: 950px)
+{
+    nav {
+        width: 100%;
+    }
+
+}
+

@@ -1,0 +1,191 @@
+:root{
+    --color-one : #2d3238;
+}
+@font-face {font-family:'Germany';src: url('../fonts/Germany Slime Gothic.otf');font-weight: normal}
+/*main*/
+
+.block-image{
+    background-image: url("../images/munich.jpg");
+    background-position: right 0 bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    height:700px;
+}
+
+.block-container{
+    background:white;
+    max-width: 1850px;
+    margin:auto;
+    margin-bottom:100px;
+    border-radius: 5px;
+
+}
+.city-name{
+    display: flex;
+    justify-content: center;
+    font-family: Germany;
+    font-size: 90px;
+    max-width: 500px;
+    max-height: 200px;
+    margin: auto;
+    text-align: center;
+}
+.Sommaire{
+    max-width: 400px;
+    justify-content: center;
+    margin: 100px auto;
+    background: black;
+    color:#509bf5;
+    border-radius: 3px;
+    padding: 10px;
+
+}
+.lieu-title, .google-map {
+    text-align: center;
+}
+
+.explication{
+    margin: 10px;
+}
+.photo-lieu{
+text-align: center;
+}
+.photo-lieu img{
+    max-width:1500px;
+    height: auto;
+    margin: auto;
+}
+ #firstimage {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+ #firstimage:hover {
+    filter: none;
+    -webkit-filter: none;
+    transition: 1s filter;
+}
+#secondimage {
+    filter: grayscale(1);
+    -webkit-filter:grayscale(1);
+    max-height: 800px;
+}
+#secondimage:hover {
+    filter: none;
+    -webkit-filter: none;
+    transition: 1s filter;
+}
+#thirdimage{
+    filter: brightness(20%);
+    -webkit-filter: brightness(20%);
+}
+#thirdimage:hover {
+    filter: none;
+    -webkit-filter: none;
+    transition: 1s filter;
+}
+#fourthimage{
+    transform: scale(0.95);
+}
+#fourthimage:hover{
+    transform: scale(1);
+}
+
+.block-container h2{
+    text-align: center;
+}
+
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+    max-height: 600px;
+}
+.carousel-item {
+    flex: 1 0 250px;
+    margin-left: 1rem;
+    scroll-snap-align: start;
+}
+.carousel ul{
+    list-style: none;
+}
+caption{
+    justify-content: center;
+}
+.inner-scroll-photo img{
+    max-height: 500px;
+    width: auto;
+}
+.carousel ::-webkit-scrollbar {
+    height: 6px;
+    background-color: #F5F5F5;
+}
+.carousel ::-webkit-scrollbar-thumb {
+    background-color: #3d4852;
+    border-radius: 3px;
+}
+.carousel ::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+.google-map iframe {
+    max-width: 600px;
+    max-height: 450px;
+    margin: 30px;
+
+}
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    animation-duration: 3s;
+}
+
+/*reponsive*/
+
+@media screen and (max-width: 1300px){
+    .block-image{
+        display: none;
+    }
+}
+@media screen and (max-width: 1510px){
+    .photo-lieu img{
+        width:100%;
+
+    }
+    .google-map iframe{
+        width: 100%;
+        margin:auto;
+    }
+    .block-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+

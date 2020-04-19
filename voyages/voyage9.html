@@ -1,157 +1,440 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
-  <head>
+<html lang="fr">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nouvelle-Zélande</title>
-    <link rel="stylesheet" href="../styles/css/voyage.css">
-    <link rel="stylesheet" href="../styles/css/voyage9.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../styles/js/canvas-menu.js"></script>
     <link rel="stylesheet" href="../styles/css/fa.css">
+    <link rel="stylesheet" href="../styles/css/voyages.css">
+    <link rel="stylesheet" href="../styles/css/voyage9.css">
     <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-  </head>
-  <body>
+</head>
+<body>
     <header>
-
+        <nav>
+            <div class="logo">
+                <a href="voyages.html">
+                    <img src="../styles/images/earth.png" alt="Voyages">
+                </a>
+            </div>
+            <div class="link">
+                <ul>
+                    <li>
+                        <a href="voyages.html">Accueil</a>
+                    </li>
+                    <li class="cat-nav-menu" data-type-menu="Prenom" id="prenom-nav-menu">
+                        Prénom <a class="toggle-menu-deroulant" role="button"></a>
+                        <ul class="menu-deroulant">
+                            <li class="title-menu"><h3>Prénom</h3></li>
+                            <li class="menu-is"><span>Bastien</span>
+                                <ul class="menu-deroulant-child">
+                                    <li><a href="voyage4.html">États-Unis (Amérique)</a></li>
+                                    <li><a href="voyage5.html">Angleterre</a></li>
+                                    <li><a href="voyage6.html">Espagne</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-is"><span>Kevin</span>
+                                <ul class="menu-deroulant-child">
+                                    <li><a href="voyage1.html">Cuba</a></li>
+                                    <li><a href="voyage2.html">Indonésie</a></li>
+                                    <li><a href="voyage3.html">Allemagne</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-is"><span>Céline</span>
+                                <ul class="menu-deroulant-child">
+                                    <li><a href="voyage9.html">Nouvelle-Zélande</a></li>
+                                    <li><a href="voyage7.html">Islande</a></li>
+                                    <li><a href="voyage8.html">Philippines</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cat-nav-menu" data-type-menu="Continent" id="continent-nav-menu">
+                        Continent <a class="toggle-menu-deroulant" role="button"></a>
+                        <ul class="menu-deroulant">
+                            <li class="title-menu"><h3>Continent</h3></li>
+                            <li class="menu-is"><span>Europe</span>
+                                <ul class="menu-deroulant-child">
+                                    <li><a href="voyage5.html">Angleterre</a></li>
+                                    <li><a href="voyage6.html">Espagne</a></li>
+                                    <li><a href="voyage3.html">Allemagne</a></li>
+                                    <li><a href="voyage7.html">Islande</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-is"><span>Asie</span>
+                                <ul class="menu-deroulant-child">
+                                    <li><a href="voyage2.html">Indonésie</a></li>
+                                    <li><a href="voyage8.html">Philippines</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-is"><span>Océanie</span>
+                                <ul class="menu-deroulant-child">
+                                    <li><a href="voyage9.html">Nouvelle-Zélande</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-is"><span>Amérique</span>
+                                <ul class="menu-deroulant-child">
+                                    <li><a href="voyage4.html">États-Unis (Amérique)</a></li>
+                                    <li><a href="voyage1.html">Cuba</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="respon">
+                <div class="hamburger-menu">
+                    <i class="far fa-hamburger"></i>
+                </div>
+                <div class="logo-respon">
+                    <a href="voyages.html">
+                        <img src="../styles/images/earth.png" alt="Voyages">
+                    </a>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-      <div class="main_top_NZ">
-        <div class="titre_NZ">
-          <h1>Nouvelle-Zélande</h1>
+        <div class="main_top_NZ">
+            <div class="titre_NZ">
+                <h1>Nouvelle-Zélande</h1>
+            </div>
         </div>
-      </div>
-      <div class="main_corps_NZ">
-        <div class="activites_NZ">
-          <div class="activite_NZ">
-            <h2>Tongariro</h2>
-            <p>Le parc national du Tongariro, sur l'île du Nord est l'un des plus beaux parcs du pays. Avec plus d’un million de visiteurs par an, le Parc du Tongariro est le parc national le plus visité de Nouvelle-Zélande. Il propose de nombreuses activités et surtout la randonnée souvent désignée comme la plus belle du pays : Le Tongariro Alpline Crossing.</p>
-            <figure class="activite_figure_NZ">
-              <img src="../styles/images/Tongariro_NZ.jpg" alt="Tongariro, Nouvelle-Zélande">
-              <figcaption class="activite_figcaption_NZ">Tongariro</figcaption>
-            </figure>
-            <p>Ce parc volcanique contient de nombreux sites sacrés pour les maoris, comme le Mont Ngauruhoe (voir photo suivante), lieu de tournage de la montagne du Destin dans Le Seigneur des Anneaux.</p>
-            <figure class="activite_figure_NZ">
-              <img src="../styles/images/sommet_tongariro_NZ.jpg" alt="Le Ngauruhoe et le Ruapehu vus du sommet du Tongariro, Nouvelle Zélande">
-              <figcaption class="activite_figcaption_NZ">Le Ngauruhoe et le Ruapehu vu du sommet du Tongariro</figcaption>
-            </figure>
-          </div>
-          <hr class="hr_activites_NZ">
-          <div class="activite_NZ">
-            <h2>Milford Sound</h2>
-            <p>Un des lieux les plus caractéristiques de Nouvelle-Zélande, le Milford Sound est décrit par Rudyard Kipling comme la "huitième merveille du monde". Sculpté par les glaciers pendant l'ère glaciaire, les falaises du fjord s'érigent verticalement des eaux sombres, les pics montagneux touchent le ciel et les cascades chutent sur plus de 1 000 mètres. Situé au sud-ouest de l’île du sud, le fjord peut se découvre principalement par les airs ou par la mer, en croisière ou en kayak.</p>
-            <figure class="activite_figure_NZ">
-              <img src="../styles/images/Milford_Sound_NZ.jpg" alt="Milford Sound, Nouvelle-Zélande">
-              <figcaption class="activite_figcaption_NZ">Milford Sound</figcaption>
-            </figure>
-          </div>
-          <hr class="hr_activites_NZ">
-          <div class="activite_NZ">
-            <h2>Mont Cook</h2>
-            <p>Point culminant de Nouvelle-Zélande, le Mont Cook ou Aoraki en Maori s’élève à 3724 mètres d’altitude. Situé dans la partie ouest de l’Ile du Sud, le Mont Cook et sa Hooker Valley est un incontournable de la Nouvelle-Zélande, qui offre parmi les plus belles randonnées du pays.</p>
-            <figure class="activite_figure_NZ">
-              <img src="../styles/images/Mont_Cook_NZ_2.jpg" alt="Mont Cook, Nouvelle Zélande">
-              <figcaption class="activite_figcaption_NZ">Mont Cook</figcaption>
-            </figure>
-            <p>La route menant au seul village avoisinant est toute aussi somptueuse.</p>
-            <figure class="activite_figure_NZ">
-              <img src="../styles/images/Mont_Cook_road_NZ.jpg" alt="Route pour Mont Cook, Nouvelle Zélande">
-              <figcaption class="activite_figcaption_NZ">Route pour Mont Cook</figcaption>
-            </figure>
-          </div>
-          <hr class="hr_activites_NZ">
-          <div class="activite_NZ">
-            <h2>Abel Tasman</h2>
-            <figure class="activite_figure_NZ">
-              <img src="../styles/images/Abel_Tasman_National_Park_NZ.jpg" alt="Parc National Abel Tasman, Nouvelle-Zélande">
-              <figcaption class="activite_figcaption_NZ">Parc National Abel Tasman</figcaption>
-            </figure>
-            <p>Avec ses 225 km², c'est le plus petit parc national de Nouvelle-Zélande. La forêt de hêtres qui recouvre les collines de granite s'étend jusqu'au bord de la mer. Durant des milliers d'années, l'érosion a sculpté la côte et donné naissance à des îles et des lagons.</p>
-            <figure class="activite_figure_NZ">
-              <img src="../styles/images/Abel_Tasman_Kayak_NZ.jpg" alt="Kayak autour d'Abel Tasman, Nouvelle-Zélande">
-              <figcaption class="activite_figcaption_NZ">Kayak autour d'Abel Tasman</figcaption>
-            </figure>
-            <p>Le parc ne contient aucune route intérieure et le seul moyen d’exploration est la randonnée ou la navigation. Le kayak est notamment une des principales activités et permet de découvrir ce véritable paradis terrestre peuplé de dauphins et d’otaries.</p>
-          </div>
-          <hr class="hr_activites_NZ">
-          <div class="activite_NZ">
-            <h2>Queenstown et Wanaka</h2>
-            <p>Situées au centre de l’Ile du Sud, Queenstown et Wanaka sont deux petites villes permettant d’admirer de somptueux paysages composées de lac et de montagnes.</p>
-            <hr>
-            <p>Renommée pour ses sports extrêmes et sa « nightlife » enivrante, Queenstown permet de pratiquer bien des activités telles que le VTT de descente ou encore le saut à l’élastique.</p>
-            <figure class="activite_figure_NZ">
-              <img src="../styles/images/Queenstown_NZ.jpg" alt="Queenstown depuis Bob's Peak, Nouvelle-Zélande">
-              <figcaption class="activite_figcaption_NZ">Queenstown depuis Bob's Peak</figcaption>
-            </figure>
-            <p>Plus calme et intimiste,  Wanaka n’est pas en reste avec des paysages à couper le souffle tel que le Roy’s peak.</p>
-            <figure class="activite_figure_NZ">
-              <img src="../styles/images/Roys_Peak_NZ.jpg" alt="Roys Peak panorama, Nouvelle Zélande">
-              <figcaption class="activite_figcaption_NZ">Roys Peak panorama</figcaption>
-            </figure>
-          </div>
-          <hr class="hr_activites_NZ">
-          <div class="activite_NZ">
-            <h2>Auckland</h2>
-            <figure class="activite_figure_NZ">
-              <img src="../styles/images/Auckland_NZ.jpg" alt="Auckland, Nouvelle Zélande">
-              <figcaption class="activite_figcaption_NZ">Auckland</figcaption>
-            </figure>
-            <p>Capitale économique de Nouvelle-Zélande, Auckland ou la « City of sails » en est aussi la ville la plus vivante. Que ce soit son centre moderne, ses parcs aux vestiges volcaniques, ses plages et ses iles avoisinante, la ville et sa région regorge d’activités en tout genre.</p>
-          </div>
-        </div>
-        <div class="Autres_NZ">
-          <div class="demographie_NZ">
-            <h2 class="h2_autres_NZ">Démographie</h2>
-            <ul>
-              <li><i class="fas fa-leaf"></i> Population: 4 282 754 habitants</li>
-              <li><i class="fas fa-leaf"></i> Capitale: Wellington</li>
-              <li><i class="fas fa-leaf"></i> Langue officielle: Anglais</li>
-              <li><i class="fas fa-leaf"></i> Langues parlées: Maori, </li>
-              <li><i class="fas fa-leaf"></i> Monnaie: Dollar néo-zélandais</li>
-              <li><i class="fas fa-leaf"></i> Religion: Christianisme</li>
-              <li><i class="fas fa-leaf"></i> Décalage horaire: 10 heures d'avance (été)</li>
-            </ul>
-          </div>
-          <h2 class="h2_autres_NZ">Gallerie</h2>
-          <div class="gallerie_NZ">
+        <div class="main_corps_NZ">
+            <div class="activites_NZ">
+                <div class="activite_NZ">
+                    <h2>Tongariro</h2>
+                    <p>Le parc national du Tongariro, sur l'île du Nord est l'un des plus beaux parcs du pays. Avec plus
+                        d’un million de visiteurs par an, le Parc du Tongariro est le parc national le plus visité de
+                        Nouvelle-Zélande. Il propose de nombreuses activités et surtout la randonnée souvent désignée comme
+                        la plus belle du pays : Le Tongariro Alpline Crossing.</p>
+                    <figure class="activite_figure_NZ">
+                        <img src="../styles/images/Tongariro_NZ.jpg" alt="Tongariro, Nouvelle-Zélande">
+                        <figcaption class="activite_figcaption_NZ">Tongariro</figcaption>
+                    </figure>
+                    <p>Ce parc volcanique contient de nombreux sites sacrés pour les maoris, comme le Mont Ngauruhoe (voir
+                        photo suivante), lieu de tournage de la montagne du Destin dans Le Seigneur des Anneaux.</p>
+                    <figure class="activite_figure_NZ">
+                        <img src="../styles/images/sommet_tongariro_NZ.jpg"
+                             alt="Le Ngauruhoe et le Ruapehu vus du sommet du Tongariro, Nouvelle Zélande">
+                        <figcaption class="activite_figcaption_NZ">Le Ngauruhoe et le Ruapehu vu du sommet du Tongariro
+                        </figcaption>
+                    </figure>
+                </div>
+                <hr class="hr_activites_NZ">
+                <div class="activite_NZ">
+                    <h2>Milford Sound</h2>
+                    <p>Un des lieux les plus caractéristiques de Nouvelle-Zélande, le Milford Sound est décrit par Rudyard
+                        Kipling comme la "huitième merveille du monde". Sculpté par les glaciers pendant l'ère glaciaire,
+                        les falaises du fjord s'érigent verticalement des eaux sombres, les pics montagneux touchent le ciel
+                        et les cascades chutent sur plus de 1 000 mètres. Situé au sud-ouest de l’île du sud, le fjord peut
+                        se découvre principalement par les airs ou par la mer, en croisière ou en kayak.</p>
+                    <figure class="activite_figure_NZ">
+                        <img src="../styles/images/Milford_Sound_NZ.jpg" alt="Milford Sound, Nouvelle-Zélande">
+                        <figcaption class="activite_figcaption_NZ">Milford Sound</figcaption>
+                    </figure>
+                </div>
+                <hr class="hr_activites_NZ">
+                <div class="activite_NZ">
+                    <h2>Mont Cook</h2>
+                    <p>Point culminant de Nouvelle-Zélande, le Mont Cook ou Aoraki en Maori s’élève à 3724 mètres
+                        d’altitude. Situé dans la partie ouest de l’Ile du Sud, le Mont Cook et sa Hooker Valley est un
+                        incontournable de la Nouvelle-Zélande, qui offre parmi les plus belles randonnées du pays.</p>
+                    <figure class="activite_figure_NZ">
+                        <img src="../styles/images/Mont_Cook_NZ_2.jpg" alt="Mont Cook, Nouvelle Zélande">
+                        <figcaption class="activite_figcaption_NZ">Mont Cook</figcaption>
+                    </figure>
+                    <p>La route menant au seul village avoisinant est toute aussi somptueuse.</p>
+                    <figure class="activite_figure_NZ">
+                        <img src="../styles/images/Mont_Cook_road_NZ.jpg" alt="Route pour Mont Cook, Nouvelle Zélande">
+                        <figcaption class="activite_figcaption_NZ">Route pour Mont Cook</figcaption>
+                    </figure>
+                </div>
+                <hr class="hr_activites_NZ">
+                <div class="activite_NZ">
+                    <h2>Abel Tasman</h2>
+                    <figure class="activite_figure_NZ">
+                        <img src="../styles/images/Abel_Tasman_National_Park_NZ.jpg"
+                             alt="Parc National Abel Tasman, Nouvelle-Zélande">
+                        <figcaption class="activite_figcaption_NZ">Parc National Abel Tasman</figcaption>
+                    </figure>
+                    <p>Avec ses 225 km², c'est le plus petit parc national de Nouvelle-Zélande. La forêt de hêtres qui
+                        recouvre les collines de granite s'étend jusqu'au bord de la mer. Durant des milliers d'années,
+                        l'érosion a sculpté la côte et donné naissance à des îles et des lagons.</p>
+                    <figure class="activite_figure_NZ">
+                        <img src="../styles/images/Abel_Tasman_Kayak_NZ.jpg"
+                             alt="Kayak autour d'Abel Tasman, Nouvelle-Zélande">
+                        <figcaption class="activite_figcaption_NZ">Kayak autour d'Abel Tasman</figcaption>
+                    </figure>
+                    <p>Le parc ne contient aucune route intérieure et le seul moyen d’exploration est la randonnée ou la
+                        navigation. Le kayak est notamment une des principales activités et permet de découvrir ce véritable
+                        paradis terrestre peuplé de dauphins et d’otaries.</p>
+                </div>
+                <hr class="hr_activites_NZ">
+                <div class="activite_NZ">
+                    <h2>Queenstown et Wanaka</h2>
+                    <p>Situées au centre de l’Ile du Sud, Queenstown et Wanaka sont deux petites villes permettant d’admirer
+                        de somptueux paysages composées de lac et de montagnes.</p>
+                    <hr>
+                    <p>Renommée pour ses sports extrêmes et sa « nightlife » enivrante, Queenstown permet de pratiquer bien
+                        des activités telles que le VTT de descente ou encore le saut à l’élastique.</p>
+                    <figure class="activite_figure_NZ">
+                        <img src="../styles/images/Queenstown_NZ.jpg" alt="Queenstown depuis Bob's Peak, Nouvelle-Zélande">
+                        <figcaption class="activite_figcaption_NZ">Queenstown depuis Bob's Peak</figcaption>
+                    </figure>
+                    <p>Plus calme et intimiste, Wanaka n’est pas en reste avec des paysages à couper le souffle tel que le
+                        Roy’s peak.</p>
+                    <figure class="activite_figure_NZ">
+                        <img src="../styles/images/Roys_Peak_NZ.jpg" alt="Roys Peak panorama, Nouvelle Zélande">
+                        <figcaption class="activite_figcaption_NZ">Roys Peak panorama</figcaption>
+                    </figure>
+                </div>
+                <hr class="hr_activites_NZ">
+                <div class="activite_NZ">
+                    <h2>Auckland</h2>
+                    <figure class="activite_figure_NZ">
+                        <img src="../styles/images/Auckland_NZ.jpg" alt="Auckland, Nouvelle Zélande">
+                        <figcaption class="activite_figcaption_NZ">Auckland</figcaption>
+                    </figure>
+                    <p>Capitale économique de Nouvelle-Zélande, Auckland ou la « City of sails » en est aussi la ville la
+                        plus vivante. Que ce soit son centre moderne, ses parcs aux vestiges volcaniques, ses plages et ses
+                        iles avoisinante, la ville et sa région regorge d’activités en tout genre.</p>
+                </div>
+            </div>
+            <div class="Autres_NZ">
+                <div class="demographie_NZ">
+                    <h2 class="h2_autres_NZ">Démographie</h2>
+                    <ul>
+                        <li><i class="fas fa-leaf"></i> Population: 4 282 754 habitants</li>
+                        <li><i class="fas fa-leaf"></i> Capitale: Wellington</li>
+                        <li><i class="fas fa-leaf"></i> Langue officielle: Anglais</li>
+                        <li><i class="fas fa-leaf"></i> Langues parlées: Maori,</li>
+                        <li><i class="fas fa-leaf"></i> Monnaie: Dollar néo-zélandais</li>
+                        <li><i class="fas fa-leaf"></i> Religion: Christianisme</li>
+                        <li><i class="fas fa-leaf"></i> Décalage horaire: 10 heures d'avance (été)</li>
+                    </ul>
+                </div>
+                <h2 class="h2_autres_NZ">Gallerie</h2>
+                <div class="gallerie_NZ">
 
-            <figure class="figure_gallerie_NZ">
-              <img src="../styles/images/Cathedrale_Cove_NZ.jpg" alt="Péninsule de comorandel Cathedrale Cove, Nouvelle Zélande">
-              <figcaption class=gallerie_figcaption_NZ>Cathedrale Cove</figcaption>
-            </figure>
-            <figure class="figure_gallerie_NZ">
-              <img src="../styles/images/Mont_taranaki_NZ.jpg" alt="Mont Taranaki, Nouvelle Zélande">
-              <figcaption class=gallerie_figcaption_NZ>Mont Taranaki</figcaption>
-            </figure>
-            <figure class="figure_gallerie_NZ">
-              <img src="../styles/images/Pancake_Rocks_NZ.jpg" alt="Pancake Rocks, Nouvelle Zélande">
-              <figcaption class=gallerie_figcaption_NZ>Pancake Rocks</figcaption>
-            </figure>
-            <figure class="figure_gallerie_NZ">
-              <img src="../styles/images/plage_karekare_NZ.jpg" alt="Plage Karekare ou -leçon de piano-, Nouvelle Zélande">
-              <figcaption class=gallerie_figcaption_NZ>Plage Karekare ou "leçon de piano"</figcaption>
-            </figure>
-            <figure class="figure_gallerie_NZ">
-              <img src="../styles/images/rotorua_NZ.jpg" alt="Rotorua, Nouvelle Zélande">
-              <figcaption class=gallerie_figcaption_NZ>Rotorua</figcaption>
-            </figure>
-            <figure class="figure_gallerie_NZ">
-              <img src="../styles/images/franzjosef_glacier_NZ.jpg" alt="Franz Josef Glacier, Nouvelle Zélande">
-              <figcaption class=gallerie_figcaption_NZ>Franz Josef Glacier</figcaption>
-            </figure>
-            <figure class="figure_gallerie_NZ">
-              <img src="../styles/images/Arthurs_Pass_NZ.jpg" alt="Arthur's Pass, Nouvelle Zélande">
-              <figcaption class=gallerie_figcaption_NZ>Arthur's Pass</figcaption>
-            </figure>
-            <figure class="figure_gallerie_NZ">
-              <img src="../styles/images/Kaikoura_NZ.jpg" alt="Kaikoura, Nouvelle Zélande">
-              <figcaption class=gallerie_figcaption_NZ>Kaikoura</figcaption>
-            </figure>
-          </div>
+                    <figure class="figure_gallerie_NZ">
+                        <img src="../styles/images/Cathedrale_Cove_NZ.jpg"
+                             alt="Péninsule de comorandel Cathedrale Cove, Nouvelle Zélande">
+                        <figcaption class=gallerie_figcaption_NZ>Cathedrale Cove</figcaption>
+                    </figure>
+                    <figure class="figure_gallerie_NZ">
+                        <img src="../styles/images/Mont_taranaki_NZ.jpg" alt="Mont Taranaki, Nouvelle Zélande">
+                        <figcaption class=gallerie_figcaption_NZ>Mont Taranaki</figcaption>
+                    </figure>
+                    <figure class="figure_gallerie_NZ">
+                        <img src="../styles/images/Pancake_Rocks_NZ.jpg" alt="Pancake Rocks, Nouvelle Zélande">
+                        <figcaption class=gallerie_figcaption_NZ>Pancake Rocks</figcaption>
+                    </figure>
+                    <figure class="figure_gallerie_NZ">
+                        <img src="../styles/images/plage_karekare_NZ.jpg"
+                             alt="Plage Karekare ou -leçon de piano-, Nouvelle Zélande">
+                        <figcaption class=gallerie_figcaption_NZ>Plage Karekare ou "leçon de piano"</figcaption>
+                    </figure>
+                    <figure class="figure_gallerie_NZ">
+                        <img src="../styles/images/rotorua_NZ.jpg" alt="Rotorua, Nouvelle Zélande">
+                        <figcaption class=gallerie_figcaption_NZ>Rotorua</figcaption>
+                    </figure>
+                    <figure class="figure_gallerie_NZ">
+                        <img src="../styles/images/franzjosef_glacier_NZ.jpg" alt="Franz Josef Glacier, Nouvelle Zélande">
+                        <figcaption class=gallerie_figcaption_NZ>Franz Josef Glacier</figcaption>
+                    </figure>
+                    <figure class="figure_gallerie_NZ">
+                        <img src="../styles/images/Arthurs_Pass_NZ.jpg" alt="Arthur's Pass, Nouvelle Zélande">
+                        <figcaption class=gallerie_figcaption_NZ>Arthur's Pass</figcaption>
+                    </figure>
+                    <figure class="figure_gallerie_NZ">
+                        <img src="../styles/images/Kaikoura_NZ.jpg" alt="Kaikoura, Nouvelle Zélande">
+                        <figcaption class=gallerie_figcaption_NZ>Kaikoura</figcaption>
+                    </figure>
+                </div>
+            </div>
         </div>
-      </div>
     </main>
     <footer>
-
+        <div class="footer-sup">
+                <span class="footer-item">
+                    <a href="../contact.html">Nous contacter</a>
+                </span>
+            <span class="footer-item">
+                    <a href="../voyage-tab.html">Lieux visités</a>
+                </span>
+        </div>
+        Copyright© by KBC Nueve
     </footer>
-  </body>
+    <div class="CanvasMenu">
+        <div class="menu-nav-left"></div>
+        <div class="menu-nav-right">
+            <div class="CanvasMenu-content">
+                <div class="CanvasMenu-header">
+                    Menu
+                    <span class="CanvasMenu-close"></span>
+                </div>
+                <div class="CanvasMenu-nav ">
+                    <a href="voyages.html"><i class="far fa-home"></i> Accueil</a>
+                </div>
+                <div class="CanvasMenu-nav CanvasMenu-cat is-select">
+                    <div class="CanvasMenu-titre">
+                        Prénom <span class="CanvasMenu-open"></span>
+                    </div>
+                    <div class="CanvasMenu-all-item">
+                        <div class="CanvasMenu-item CanvasMenu-child">
+                            <div class="CanvasMenu-child-name" >
+                                Bastien <span class="CanvasMenu-open-child"></span>
+                            </div>
+                            <div class="CanvasMenu-child-all-item">
+                                <div class="CanvasMenu-item">
+                                    <a href="voyage4.html">
+                                        États-Unis
+                                    </a>
+                                </div>
+                                <div class="CanvasMenu-item">
+                                    <a href="voyage5.html">
+                                        Angleterre
+                                    </a>
+                                </div>
+                                <div class="CanvasMenu-item">
+                                    <a href="voyage6.html">
+                                        Espagne
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CanvasMenu-item  CanvasMenu-child">
+                            <div class="CanvasMenu-child-name">
+                                Kevin <span class="CanvasMenu-open-child"></span>
+                            </div>
+                            <div class="CanvasMenu-child-all-item">
+                                <div class="CanvasMenu-item">
+                                    <a href="voyage2.html">
+                                        Indonésie
+                                    </a>
+                                </div>
+                                <div class="CanvasMenu-item">
+                                    <a href="voyage1.html">
+                                        Cuba
+                                    </a>
+                                </div>
+                                <div class="CanvasMenu-item">
+                                    <a href="voyage3.html">
+                                        Allemagne
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CanvasMenu-item  CanvasMenu-child active">
+                            <div class="CanvasMenu-child-name">
+                                Céline <span class="CanvasMenu-open-child"></span>
+                            </div>
+                            <div class="CanvasMenu-child-all-item"  style="display: block;">
+                                <div class="CanvasMenu-item is-select">
+                                    <a href="voyage9.html">
+                                        Nouvelle-Zélande
+                                    </a>
+                                </div>
+                                <div class="CanvasMenu-item">
+                                    <a href="voyage7.html">
+                                        Islande
+                                    </a>
+                                </div>
+                                <div class="CanvasMenu-item">
+                                    <a href="voyage8.html">
+                                        Philippines
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="CanvasMenu-nav CanvasMenu-cat">
+                <div class="CanvasMenu-titre">
+                    Continent <span class="CanvasMenu-open"></span>
+                </div>
+                <div class="CanvasMenu-all-item">
+                    <div class="CanvasMenu-item CanvasMenu-child">
+                        <div class="CanvasMenu-child-name">
+                            Europe <span class="CanvasMenu-open-child"></span>
+                        </div>
+                        <div class="CanvasMenu-child-all-item">
+                            <div class="CanvasMenu-item">
+                                <a href="voyage5.html">
+                                    Angleterre
+                                </a>
+                            </div>
+                            <div class="CanvasMenu-item">
+                                <a href="voyage6.html">
+                                    Espagne
+                                </a>
+                            </div>
+                            <div class="CanvasMenu-item">
+                                <a href="voyage3.html">
+                                    Allemagne
+                                </a>
+                            </div>
+                            <div class="CanvasMenu-item">
+                                <a href="voyage7.html">
+                                    Islande
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CanvasMenu-item  CanvasMenu-child">
+                        <div class="CanvasMenu-child-name">
+                            Asie <span class="CanvasMenu-open-child"></span>
+                        </div>
+                        <div class="CanvasMenu-child-all-item">
+                            <div class="CanvasMenu-item">
+                                <a href="voyage2.html">
+                                    Indonésie
+                                </a>
+                            </div>
+                            <div class="CanvasMenu-item">
+                                <a href="voyage8.html">
+                                    Philippines
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CanvasMenu-item  CanvasMenu-child active">
+                        <div class="CanvasMenu-child-name">
+                            Océanie <span class="CanvasMenu-open-child"></span>
+                        </div>
+                        <div class="CanvasMenu-child-all-item" style="display: block;">
+                            <div class="CanvasMenu-item is-select">
+                                <a href="voyage9.html">
+                                    Nouvelle-Zélande
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CanvasMenu-item  CanvasMenu-child active">
+                        <div class="CanvasMenu-child-name">
+                            Amérique <span class="CanvasMenu-open-child"></span>
+                        </div>
+                        <div class="CanvasMenu-child-all-item">
+                            <div class="CanvasMenu-item">
+                                <a href="voyage4.html">
+                                    États-Unis (Amérique)
+                                </a>
+                            </div>
+                            <div class="CanvasMenu-item">
+                                <a href="voyage1.html">
+                                    Cuba
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

@@ -1,284 +1,336 @@
 /* PAGE 7 ISLANDE */
 
-.html-islande, .body-islande{
-  margin:0;
-  padding: 0;
-  font-family: 'PT Sans', sans-serif;
+.html-islande, .body-islande {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
 }
-.body-islande{
-  overflow-x: hidden!important;
+
+.body-islande {
+    overflow-x: hidden !important;
 }
-.hr_island{
-  margin: 0 auto;
-  margin-top: 40px;
-  width: 70%;
-  border: 0;
-  height: 4px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(12, 65, 13, 0.75), rgba(255, 255, 255, 0));
+
+.hr_island {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 70%;
+    border: 0;
+    height: 4px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(12, 65, 13, 0.75), rgba(255, 255, 255, 0));
 }
-.h3_islande{
-  padding-left: 1rem;
-  font-family: 'Lexend Giga', sans-serif;
-  letter-spacing: -2px;
-  text-align: center;
-  color: rgba(12, 65, 13, 1);
-}
-.main-islande{
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  background-color:#E4E4E4;
-}
-.island_principal{
-  background-color: white;
-  max-width: 1300px;
-  margin: 0 auto;
-  box-shadow: 0 0 10px 1px grey;
-  z-index: 1;
-}
-.photo-pays-islande{
-  background-image: url("../images/auroreboreale.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50vh;
-  font-size: 50px;
-  background-position:bottom;
-  background-attachment: fixed;
-  box-shadow: 0 0 10px 1px grey;
-  z-index: 2;
-}
-.photo_pays_islande_container{
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(0deg,rgba(18,18,23,.6) 0,rgba(18,18,23,.4) 60%,rgba(18,18,23,0));
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-}
-.h2_island{
-  color: white;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: -5px;
-  font-size: 50px;
-  font-family: 'Lexend Giga', sans-serif;
-  flex-grow: 1;
-}
-.liste_nav_islande{
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: 15px;
-  font-family: 'Lexend Giga', sans-serif;
-  padding: 0;
-  height: 100%;
-  margin: 0;
-  background-color: white;
-  border-radius: 0 0 20px 20px;
-}
-.liste_nav_islande > li{
-  height: 100%;
-  padding: 1rem;
-  margin: 0.2rem 1rem;
-  text-align: center;
-  border-radius: 20px;
-}
-.liste_nav_islande > li:hover{
-  background-color: rgba(23, 140, 26, 0.2);
-  transition: all ease-out 0.1s;
-}
-.liste_nav_islande > li > a{
-  color: rgba(12, 65, 13, 1);
-  text-decoration:none;
-}
-.nav_islande{
-  max-width: 1300px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top:0;
-}
-.caracteristiques-pays, .histoire, .activite, .gallerie{
-  max-width: 1400px;
-  margin: 0 auto;
-}
-.caracteristiques-pays, .activite_contenu{
-  background-color: rgba(23, 140, 26, 0.2);
-  margin: 1rem;
-  border-radius: 20px;
-}
-.caracteristiques-pays{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 1rem 0;
-}
-.demographie{
-  flex:1;
-  white-space: nowrap;
-  margin: 0 1rem 0 0.5rem;
-}
-.histoire{
-  flex:2;
-  text-align: justify;
-  margin: 0 0.5rem 0 1rem;
-}
-.activite_contenu{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 1rem 0;
-}
-.islande_activite_img{
-  width: 40%;
-  margin: 0 0.5rem 0 1rem;
-  align-self: flex-start;
-  border-radius: 20px;
-  transition: all ease-out 0.1s;
-}
-.islande_activite_img:hover{
-  transform: scale(1.03);
-}
-.activite_texte{
-  text-align: justify;
-  margin: 0 1rem 0 0.5rem;
-}
-.gallerie{
-  overflow: hidden;
-}
-.gallerie_grid{
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  grid-gap: 0.5rem;
-}
-.islande_gallerie_img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.island_figcaption{
-  background-color: rgba(7, 37, 8, 0.7);
-  position: absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  opacity: 0;
-  color:white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight:bold;
-  transition: ease-out 0.2s;
-  text-align: center;
-}
-.island_figcaption:hover{
-  opacity: 1;
-  transition: ease-in 0.2s;
-}
-.gallerie_element_1, .gallerie_element_2, .gallerie_element_3, .gallerie_element_4, .gallerie_element_5, .gallerie_element_6, .gallerie_element_7, .gallerie_element_8, .gallerie_element_9{
-  margin: 0;
-  position: relative;
-  box-shadow: 0 0 3px 1px grey;
-}
-.gallerie_element_1{
-  grid-column: 6/9;
-  grid-row: 1/3;
-}
-.gallerie_element_2{
-  grid-column: 1/6;
-  grid-row: 1/3;
-}
-.gallerie_element_3{
-  grid-column: 1/5;
-  grid-row: 5/7;
-}
-.gallerie_element_4{
-  grid-column: 4/9;
-  grid-row: 3/5;
-}
-.gallerie_element_5{
-  grid-column: 1/4;
-  grid-row: 3/5;
-}
-.gallerie_element_6{
-  grid-column: 5/7;
-  grid-row: 7/9;
-}
-.gallerie_element_7{
-  grid-column: 7/9;
-  grid-row: 7/9;
-}
-.gallerie_element_8{
-  grid-column: 5/9;
-  grid-row: 5/7;
-}
-.gallerie_element_9{
-  grid-column: 1/5;
-  grid-row: 7/9;
-}
-@media (max-width:799px) {
-  .caracteristiques-pays, .activite_contenu{
-    flex-direction: column;
-    padding: 0 1rem;
-  }
-  .demographie, .activite_texte{
-    margin: 0.5rem 0 1rem 0;
-  }
-  .histoire, .islande_activite_img{
-    margin: 1rem 0 0.5rem 0;
-  }
-  .islande_activite_img{
-    align-self: center;
-    width: 100%;
-  }
-  .demographie{
-    white-space: normal;
-  }
-  .liste_nav_islande{
-    font-size: 10px;
-  }
-  .body-islande{
-    font-size: 13px;
-  }
-  .h2_island{
-    font-size: 30px;
-  }
-}
-@media (max-width:399px) {
-  .liste_nav_islande{
-    width: 100%;
-    flex-direction: column;
-  }
-  .liste_nav_islande > li{
-    flex: 1;
-    padding: 0.2rem;
-  }
-  .body-islande{
+
+.h3_islande {
+    padding-left: 1rem;
+    font-family: 'Lexend Giga', sans-serif;
+    letter-spacing: -2px;
     text-align: center;
-  }
-  .caracteristiques-pays, .activite, .activite_contenu{
-    max-width: 100%;
-    margin: 1rem 0;
-  }
-  .demographie ul{
-    list-style: none;
-    padding: 0;
-    white-space: normal;
-  }
-  .h3_islande{
-    padding: 0;
-  }
-  .gallerie_grid{
+    color: rgba(12, 65, 13, 1);
+}
+
+.main-islande {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-  }
+    background-color: #E4E4E4;
+}
+
+.island_principal {
+    background-color: white;
+    max-width: 1300px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px 1px grey;
+    z-index: 1;
+}
+
+.photo-pays-islande {
+    background-image: url("../images/auroreboreale.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    font-size: 50px;
+    background-position: bottom;
+    background-attachment: fixed;
+    box-shadow: 0 0 10px 1px grey;
+    z-index: 2;
+}
+
+.photo_pays_islande_container {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(18, 18, 23, .6) 0, rgba(18, 18, 23, .4) 60%, rgba(18, 18, 23, 0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.h2_island {
+    color: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -5px;
+    font-size: 50px;
+    font-family: 'Lexend Giga', sans-serif;
+    flex-grow: 1;
+}
+
+.liste_nav_islande {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Lexend Giga', sans-serif;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+}
+
+.liste_nav_islande > li {
+    height: 100%;
+    padding: 1rem;
+    margin: 0.2rem 1rem;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.liste_nav_islande > li:hover {
+    background-color: rgba(23, 140, 26, 0.2);
+    transition: all ease-out 0.1s;
+}
+
+.liste_nav_islande > li > a {
+    color: rgba(12, 65, 13, 1);
+    text-decoration: none;
+}
+
+.nav_islande {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 69px;
+}
+
+.caracteristiques-pays, .histoire, .activite, .gallerie {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.caracteristiques-pays, .activite_contenu {
+    background-color: rgba(23, 140, 26, 0.2);
+    margin: 1rem;
+    border-radius: 20px;
+}
+
+.caracteristiques-pays {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.demographie {
+    flex: 1;
+    white-space: nowrap;
+    margin: 0 1rem 0 0.5rem;
+}
+
+.histoire {
+    flex: 2;
+    text-align: justify;
+    margin: 0 0.5rem 0 1rem;
+}
+
+.activite_contenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.islande_activite_img {
+    width: 40%;
+    margin: 0 0.5rem 0 1rem;
+    align-self: flex-start;
+    border-radius: 20px;
+    transition: all ease-out 0.1s;
+}
+
+.islande_activite_img:hover {
+    transform: scale(1.03);
+}
+
+.activite_texte {
+    text-align: justify;
+    margin: 0 1rem 0 0.5rem;
+}
+
+.gallerie {
+    overflow: hidden;
+}
+
+.gallerie_grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 0.5rem;
+}
+
+.islande_gallerie_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.island_figcaption {
+    background-color: rgba(7, 37, 8, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: ease-out 0.2s;
+    text-align: center;
+}
+
+.island_figcaption:hover {
+    opacity: 1;
+    transition: ease-in 0.2s;
+}
+
+.gallerie_element_1, .gallerie_element_2, .gallerie_element_3, .gallerie_element_4, .gallerie_element_5, .gallerie_element_6, .gallerie_element_7, .gallerie_element_8, .gallerie_element_9 {
+    margin: 0;
+    position: relative;
+    box-shadow: 0 0 3px 1px grey;
+}
+
+.gallerie_element_1 {
+    grid-column: 6/9;
+    grid-row: 1/3;
+}
+
+.gallerie_element_2 {
+    grid-column: 1/6;
+    grid-row: 1/3;
+}
+
+.gallerie_element_3 {
+    grid-column: 1/5;
+    grid-row: 5/7;
+}
+
+.gallerie_element_4 {
+    grid-column: 4/9;
+    grid-row: 3/5;
+}
+
+.gallerie_element_5 {
+    grid-column: 1/4;
+    grid-row: 3/5;
+}
+
+.gallerie_element_6 {
+    grid-column: 5/7;
+    grid-row: 7/9;
+}
+
+.gallerie_element_7 {
+    grid-column: 7/9;
+    grid-row: 7/9;
+}
+
+.gallerie_element_8 {
+    grid-column: 5/9;
+    grid-row: 5/7;
+}
+
+.gallerie_element_9 {
+    grid-column: 1/5;
+    grid-row: 7/9;
+}
+
+@media (max-width: 799px) {
+    .caracteristiques-pays, .activite_contenu {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .demographie, .activite_texte {
+        margin: 0.5rem 0 1rem 0;
+    }
+
+    .histoire, .islande_activite_img {
+        margin: 1rem 0 0.5rem 0;
+    }
+
+    .islande_activite_img {
+        align-self: center;
+        width: 100%;
+    }
+
+    .demographie {
+        white-space: normal;
+    }
+
+    .liste_nav_islande {
+        font-size: 10px;
+    }
+
+    .body-islande {
+        font-size: 13px;
+    }
+
+    .h2_island {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 399px) {
+    .liste_nav_islande {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .liste_nav_islande > li {
+        flex: 1;
+        padding: 0.2rem;
+    }
+
+    .body-islande {
+        text-align: center;
+    }
+
+    .caracteristiques-pays, .activite, .activite_contenu {
+        max-width: 100%;
+        margin: 1rem 0;
+    }
+
+    .demographie ul {
+        list-style: none;
+        padding: 0;
+        white-space: normal;
+    }
+
+    .h3_islande {
+        padding: 0;
+    }
+
+    .gallerie_grid {
+        display: flex;
+        flex-direction: column;
+    }
 }
