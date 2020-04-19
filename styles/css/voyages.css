@@ -357,6 +357,15 @@ footer{
 .footer-sup a{
     color: white;
 }
+.footer-sup a:after{
+    content: " /";
+}
+.footer-sup a:last-child:after{
+    display: none;
+}
+.footer-sup a:hover{
+    opacity: 0.6;
+}
 /*reponsive*/
 
 @media screen and (max-width: 950px)

@@ -1,6 +1,5 @@
 @font-face {font-family:'CreamCake';src: url('../fonts/Cream Cake.ttf');font-weight: normal}
-@font-face{font-family:'Signatra';src:url('../fonts/Signatra.otf');font-weight:300}
-@font-face {font-family:'Signatra';src: url('../fonts/Signatra.ttf');font-weight: normal}
+
 /*main*/
 main {
     width: auto;

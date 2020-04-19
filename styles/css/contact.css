@@ -1,46 +1,4 @@
-:root{
-    --var-color:rgb(80, 155, 245) ;
-    --color-block : #ececec;
-    --color-one : #2980b9;
-    --color-hamburger-menu:rgb(80, 155, 245);
-    --border-hamburger-menu:1px solid rgba(255, 255, 255, 0.12);
-    --var-max-width: 1400px;
-    --color-filter : linear-gradient(0deg, #edf6fd, #f6fafe);
-    --box-shadow-one: 0 0 8px 3px rgba(0, 0, 0, 0.3);
-    --menu-deroulant-color:#2e2e2e;
-}
-
-@font-face{font-family:'FiraSans';src:url('../fonts/FiraSans-Regular.otf');font-weight:normal}
-@font-face{font-family:'FiraSans';src:url('../fonts/FiraSans-Medium.otf');font-weight:bold}
-@font-face{font-family:'FiraSans';src:url('../fonts/FiraSans-Italic.otf');font-weight:normal;font-style:italic}
-@font-face{font-family:'FiraSans';src:url('../fonts/FiraSans-UltraLight.otf');font-weight:300}
-
-html,body{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: 'FiraSans', "Trebuchet MS", Helvetica, sans-serif;
-}
-body{
-    background-color: var(--color-block);
-}
-
 /*main*/
-.button {
-    align-items: center;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid #528e8e;
-    transition: 0.25s ease;
-    font-size: 13px;
-    border-radius: 4px;
-    padding: 5px 10px;
-    text-align: center;
-    color: #edf6fd;
-    background: var(--color-one);
-}
 main
 {
     max-width: 1000px;
@@ -114,6 +72,19 @@ textarea {
 .form--input dd a {
     color: gray;
     font-size: 13px;
+}
+.button {
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #528e8e;
+    transition: 0.25s ease;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    text-align: center;
+    color: #edf6fd;
+    background: var(--color-one);
 }
 @media (max-width: 540px)
 {

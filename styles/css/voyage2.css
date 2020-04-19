@@ -1,7 +1,7 @@
 :root{
     --color-one : #c0392b;
 }
-
+@font-face{font-family:'Signatra';src:url('../fonts/Signatra.otf');font-weight:300}
 /*main*/
 main {
     padding:20px ;
