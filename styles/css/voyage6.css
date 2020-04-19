@@ -107,34 +107,34 @@ nav .link a{
     height: 500px;
     background-attachment: fixed;
 }
-.block-inner:nth-child(2) .image-header {
+.block-inner:nth-child(3) .image-header {
     background-image: url("../images/espagne.jpg");
 }
-.block-inner:nth-child(3) .image-header {
+.block-inner:nth-child(4) .image-header {
     background-image: url("../images/espagne_3.jpg");
 }
-.block-inner:nth-child(4) .image-header{
+.block-inner:nth-child(5) .image-header{
     background-image: url("../images/espagne_4.jpg");
 }
-.block-inner:nth-child(5)  .image-header {
+.block-inner:nth-child(6)  .image-header {
     background-image: url("../images/espagne_5.jpg");
 }
-.block-inner:nth-child(6)  .image-header {
+.block-inner:nth-child(7)  .image-header {
     background-image: url("../images/espagne_6.jpg");
 }
-.block-inner:nth-child(7)  .image-header {
+.block-inner:nth-child(8)  .image-header {
     background-image: url("../images/espagne_7.jpg");
 }
-.block-inner:nth-child(8)  .image-header {
+.block-inner:nth-child(9)  .image-header {
     background-image: url("../images/espagne_8.jpg");
 }
-.block-inner:nth-child(9)  .image-header {
+.block-inner:nth-child(10)  .image-header {
     background-image: url("../images/espagne_9.jpg");
 }
-.block-inner:nth-child(10)  .image-header {
+.block-inner:nth-child(11)  .image-header {
     background-image: url("../images/espagne_10.jpg");
 }
-.block-inner:nth-child(11)  .image-header {
+.block-inner:nth-child(12)  .image-header {
     background-image: url("../images/espagne_11.jpg");
 }
 .image-content {
