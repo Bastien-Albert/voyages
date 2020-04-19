@@ -357,10 +357,10 @@ footer{
 .footer-sup a{
     color: white;
 }
-.footer-sup a:after{
+.footer-sup .footer-item:after{
     content: " /";
 }
-.footer-sup a:last-child:after{
+.footer-sup .footer-item:last-child:after{
     display: none;
 }
 .footer-sup a:hover{
