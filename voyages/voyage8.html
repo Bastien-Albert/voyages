@@ -1,230 +1,518 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Philippines</title>
-    <link rel="stylesheet" href="../styles/css/voyage.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../styles/js/canvas-menu.js"></script>
+    <link rel="stylesheet" href="../styles/css/fa.css">
+    <link rel="stylesheet" href="../styles/css/voyages.css">
     <link rel="stylesheet" href="../styles/css/voyage8.css">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-
-    </header>
-    <main class="main_philippines">
-      <h1 class="h1_Philippines">Les Phillipines</h1>
-      <div class="main_top">
-        <div class="slider_philippines">
-          <div class="photos_mini">
-            <div class="miniature">
-              <input type="radio" name="demo" checked class="fen" id="place_1">
-              <label for="place_1">
-                <img class="photo_miniature" src="../styles/images/Slider_1_sagada.jpg" alt="Sagada">
-              </label>
-              <img class="fenetre1" src="../styles/images/slider_1_sagada.jpg" alt="Sagada">
-              <figcaption class="miniature_figcaption">Sagada, Mountain Province</figcaption>
-            </div>
-            <div class="miniature">
-              <input type="radio" name="demo" class="fen" id="place_2">
-              <label for="place_2">
-                <img class="photo_miniature" src="../styles/images/Slider_2_mayon.jpg" alt="Volcan Mayon Philippines">
-              </label>
-              <img class="fenetre2" src="../styles/images/slider_2_mayon.jpg" alt="Volcan Mayon Philippines">
-              <figcaption class="miniature_figcaption">Le volcan Mayon</figcaption>
-            </div>
-            <div class="miniature">
-              <input type="radio" name="demo" class="fen" id="place_3">
-              <label for="place_3">
-                <img class="photo_miniature" src="../styles/images/Slider_3_siargao.jpg" alt="Siargao Philippines">
-              </label>
-              <img class="fenetre1" src="../styles/images/slider_3_siargao.jpg" alt="Siargao Philippines">
-              <figcaption class="miniature_figcaption">Siargao</figcaption>
-            </div>
-            <div class="miniature">
-              <input type="radio" name="demo" class="fen" id="place_4">
-              <label for="place_4">
-                <img class="photo_miniature" src="../styles/images/Slider_4_camiguin.jpg" alt="Camiguin Philippines">
-              </label>
-              <img class="fenetre2" src="../styles/images/slider_4_camiguin.jpg" alt="Camiguin Philippines">
-              <figcaption class="miniature_figcaption">Camiguin</figcaption>
-            </div>
-            <div class="miniature">
-              <input type="radio" name="demo" class="fen" id="place_5">
-              <label for="place_5">
-                <img class="photo_miniature" src="../styles/images/slider_5_chocolate_hills.jpg" alt="Chocolate Hills Philippines">
-              </label>
-              <img class="fenetre1" src="../styles/images/slider_5_chocolate_hills.jpg" alt="Chocolate Hills Philippines">
-              <figcaption class="miniature_figcaption">Chocolate Hills</figcaption>
-            </div>
-            <div class="miniature">
-              <input type="radio" name="demo" class="fen" id="place_6">
-              <label for="place_6">
-                <img class="photo_miniature" src="../styles/images/slider_6_corregidor.jpg" alt="Monument de guerre Corregidor Philippines">
-              </label>
-              <img class="fenetre2" src="../styles/images/slider_6_corregidor.jpg" alt="Monument de guerre Corregidor Philippines">
-              <figcaption class="miniature_figcaption">Manille, Monument de guerre Corregidor</figcaption>
-            </div>
-            <div class="miniature">
-              <input type="radio" name="demo" class="fen" id="place_7">
-              <label for="place_7">
-                <img class="photo_miniature" src="../styles/images/slider_7_siquijor.jpg" alt="Siquijor Island Philippines">
-              </label>
-              <img class="fenetre1" src="../styles/images/slider_7_siquijor.jpg" alt="Siquijor Island Philippines">
-              <figcaption class="miniature_figcaption">Siquijor Island</figcaption>
-            </div>
-            <div class="miniature">
-              <input type="radio" name="demo" class="fen" id="place_8">
-              <label for="place_8">
-                <img class="photo_miniature" src="../styles/images/slider_8_coron.jpg" alt="île de Coron Phillipines">
-              </label>
-              <img class="fenetre2" src="../styles/images/slider_8_coron.jpg" alt="île de Coron Phillipines">
-              <figcaption class="miniature_figcaption">Île de Coron</figcaption>
-            </div>
-            <div class="miniature">
-              <input type="radio" name="demo" class="fen" id="place_9">
-              <label for="place_9">
-                <img class="photo_miniature" src="../styles/images/slider_9_boracay.jpg" alt="Boracay Philippines">
-              </label>
-              <img class="fenetre1" src="../styles/images/slider_9_boracay.jpg" alt="Boracay Philippines">
-              <figcaption class="miniature_figcaption">Boracay</figcaption>
-            </div>
-            <div class="miniature">
-              <input type="radio" name="demo" class="fen" id="place_10">
-              <label for="place_10">
-                <img class="photo_miniature" src="../styles/images/slider_10_lac_taal.jpg" alt="Lac Taal Philippines">
-              </label>
-              <img class="fenetre2" src="../styles/images/slider_10_lac_taal.jpg" alt="Lac Taal Philippines">
-              <figcaption class="miniature_figcaption">Lac Taal</figcaption>
-            </div>
-          </div>
-          <div class="photos_main_top">
-            <figure class="photos_main_top_1">
-              <img src="../styles/images/slider_1_sagada.jpg" alt="Sagada">
-              <figcaption class="photos_main_top_figcaption">Sagada, Mountain Province</figcaption>
-            </figure>
-            <figure class="photos_main_top_2">
-              <img src="../styles/images/Slider_2_mayon.jpg" alt="Volcan Mayon Philippines">
-              <figcaption class="photos_main_top_figcaption">Le volcan Mayon</figcaption>
-            </figure>
-            <figure class="photos_main_top_3">
-              <img src="../styles/images/Slider_3_siargao.jpg" alt="Siargao Philippines">
-              <figcaption class="photos_main_top_figcaption">Siargao</figcaption>
-            </figure>
-            <figure class="photos_main_top_4">
-              <img src="../styles/images/Slider_4_camiguin.jpg" alt="Camiguin Philippines">
-              <figcaption class="photos_main_top_figcaption">Camiguin</figcaption>
-            </figure>
-            <figure class="photos_main_top_5">
-              <img src="../styles/images/slider_5_chocolate_hills.jpg" alt="Chocolate Hills Philippines">
-              <figcaption class="photos_main_top_figcaption">Chocolate Hills</figcaption>
-            </figure>
-            <figure class="photos_main_top_6">
-              <img src="../styles/images/slider_6_corregidor.jpg" alt="Monument de guerre Corregidor Philippines">
-              <figcaption class="photos_main_top_figcaption">Manille, Monument de guerre Corregidor</figcaption>
-            </figure>
-            <figure class="photos_main_top_7">
-              <img src="../styles/images/slider_7_siquijor.jpg" alt="Siquijor Island Philippines">
-              <figcaption class="photos_main_top_figcaption">Siquijor Island</figcaption>
-            </figure>
-            <figure class="photos_main_top_8">
-              <img src="../styles/images/slider_8_coron.jpg" alt="île de Coron Phillipines">
-              <figcaption class="photos_main_top_figcaption">Île de Coron</figcaption>
-            </figure>
-            <figure class="photos_main_top_9">
-              <img src="../styles/images/slider_9_boracay.jpg" alt="Boracay Philippines">
-              <figcaption class="photos_main_top_figcaption">Boracay</figcaption>
-            </figure>
-            <figure class="photos_main_top_10">
-              <img src="../styles/images/slider_10_lac_taal.jpg" alt="Lac Taal Philippines">
-              <figcaption class="photos_main_top_figcaption">Lac Taal</figcaption>
-            </figure>
-          </div>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <a href="voyages.html">
+                <img src="../styles/images/earth.png" alt="Voyages">
+            </a>
         </div>
-      </div>
-      <div class="main_mid">
-        <div class="main_mid_corps">
-          <div class="histoire_philippines">
-            <p>7107 îles forment le grand archipel des Philippines, le pays le plus occidentalisé de l’Asie. Colonisé par les espagnols pendant plus de trois siècles puis sous le contrôle des américains pendant un demi-siècle, les Philippines ont donc des influences culturelles et religieuses très diverses.</p>
-            <hr>
-            <p>Mais le charme de la perle des mers d’Orient se trouve surtout dans la beauté de ses paysages, ses plages paradisiaques et ses fonds marins. On y trouve des merveilles naturelles partout où l’on se rend et il est difficile de tout visiter d’un seul coup.</p>
-            <hr>
-            <p>Les locaux vous accueillent chaleureusement et le service auprès des touristes y est réputé. Bien que difficile d’accès depuis l’Europe, un voyage aux Philippines vous surprendra. Enfin, les adeptes de la plongée vont adorer passer des heures sous l’eau.</p>
-          </div>
-          <div class="demographie_philippines">
-            <table class="table_demographie">
-              <thead>
-                <tr>
-                  <th colspan="6">Démographie</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="ligne_haut">Population</td>
-                  <td class="ligne_haut">Capitale</td>
-                  <td class="ligne_haut">Langue officielle</td>
-                  <td class="ligne_haut">Monnaie</td>
-                  <td class="ligne_haut">Religion</td>
-                  <td class="ligne_haut">Décalage horaire</td>
-                </tr>
-                <tr>
-                  <td>109 180 815 habitants</td>
-                  <td>Manille</td>
-                  <td>Phillipin, anglais</td>
-                  <td>Le Peso philippin</td>
-                  <td>Christianisme</td>
-                  <td>6 heures d'avance (été)</td>
-                </tr>
-              </tbody>
-            </table>
-            <ul class="liste_demographie_philippines">
-              <h2>Démographie</h2>
-              <li>Population: 109 180 815 habitants</li>
-              <li>Capitale: Manille</li>
-              <li>Langue officielle: Phillipin, anglais</li>
-              <li>Monnaie: Le Peso Phillipin</li>
-              <li>Religion: Christianisme</li>
-              <li>Décalage horaire: 6 heures d'avance (été)</li>
+        <div class="link">
+            <ul>
+                <li>
+                    <a href="voyages.html">Accueil</a>
+                </li>
+                <li class="cat-nav-menu" data-type-menu="Prenom" id="prenom-nav-menu">
+                    Prénom <a class="toggle-menu-deroulant" role="button"></a>
+                    <ul class="menu-deroulant">
+                        <li class="title-menu"><h3>Prénom</h3></li>
+                        <li class="menu-is"><span>Bastien</span>
+                            <ul class="menu-deroulant-child">
+                                <li><a href="voyage4.html">États-Unis (Amérique)</a></li>
+                                <li><a href="voyage5.html">Angleterre</a></li>
+                                <li><a href="voyage6.html">Espagne</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-is"><span>Kevin</span>
+                            <ul class="menu-deroulant-child">
+                                <li><a href="voyage1.html">Cuba</a></li>
+                                <li><a href="voyage2.html">Indonésie</a></li>
+                                <li><a href="voyage3.html">Allemagne</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-is"><span>Céline</span>
+                            <ul class="menu-deroulant-child">
+                                <li><a href="voyage9.html">Nouvelle-Zélande</a></li>
+                                <li><a href="voyage7.html">Islande</a></li>
+                                <li><a href="voyage8.html">Philippines</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="cat-nav-menu" data-type-menu="Continent" id="continent-nav-menu">
+                    Continent <a class="toggle-menu-deroulant" role="button"></a>
+                    <ul class="menu-deroulant">
+                        <li class="title-menu"><h3>Continent</h3></li>
+                        <li class="menu-is"><span>Europe</span>
+                            <ul class="menu-deroulant-child">
+                                <li><a href="voyage5.html">Angleterre</a></li>
+                                <li><a href="voyage6.html">Espagne</a></li>
+                                <li><a href="voyage3.html">Allemagne</a></li>
+                                <li><a href="voyage7.html">Islande</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-is"><span>Asie</span>
+                            <ul class="menu-deroulant-child">
+                                <li><a href="voyage2.html">Indonésie</a></li>
+                                <li><a href="voyage8.html">Philippines</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-is"><span>Océanie</span>
+                            <ul class="menu-deroulant-child">
+                                <li><a href="voyage9.html">Nouvelle-Zélande</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-is"><span>Amérique</span>
+                            <ul class="menu-deroulant-child">
+                                <li><a href="voyage4.html">États-Unis (Amérique)</a></li>
+                                <li><a href="voyage1.html">Cuba</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
             </ul>
-          </div>
         </div>
-      </div>
-      <div class="main_bot">
+        <div class="respon">
+            <div class="hamburger-menu">
+                <i class="far fa-hamburger"></i>
+            </div>
+            <div class="logo-respon">
+                <a href="voyages.html">
+                    <img src="../styles/images/earth.png" alt="Voyages">
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="main_philippines">
+    <h1 class="h1_Philippines">Les Phillipines</h1>
+    <div class="main_top">
+        <div class="slider_philippines">
+            <div class="photos_mini">
+                <div class="miniature">
+                    <input type="radio" name="demo" checked class="fen" id="place_1">
+                    <label for="place_1">
+                        <img class="photo_miniature" src="../styles/images/Slider_1_sagada.jpg" alt="Sagada">
+                    </label>
+                    <img class="fenetre1" src="../styles/images/slider_1_sagada.jpg" alt="Sagada">
+                    <figcaption class="miniature_figcaption">Sagada, Mountain Province</figcaption>
+                </div>
+                <div class="miniature">
+                    <input type="radio" name="demo" class="fen" id="place_2">
+                    <label for="place_2">
+                        <img class="photo_miniature" src="../styles/images/Slider_2_mayon.jpg"
+                             alt="Volcan Mayon Philippines">
+                    </label>
+                    <img class="fenetre2" src="../styles/images/slider_2_mayon.jpg" alt="Volcan Mayon Philippines">
+                    <figcaption class="miniature_figcaption">Le volcan Mayon</figcaption>
+                </div>
+                <div class="miniature">
+                    <input type="radio" name="demo" class="fen" id="place_3">
+                    <label for="place_3">
+                        <img class="photo_miniature" src="../styles/images/Slider_3_siargao.jpg"
+                             alt="Siargao Philippines">
+                    </label>
+                    <img class="fenetre1" src="../styles/images/slider_3_siargao.jpg" alt="Siargao Philippines">
+                    <figcaption class="miniature_figcaption">Siargao</figcaption>
+                </div>
+                <div class="miniature">
+                    <input type="radio" name="demo" class="fen" id="place_4">
+                    <label for="place_4">
+                        <img class="photo_miniature" src="../styles/images/Slider_4_camiguin.jpg"
+                             alt="Camiguin Philippines">
+                    </label>
+                    <img class="fenetre2" src="../styles/images/slider_4_camiguin.jpg" alt="Camiguin Philippines">
+                    <figcaption class="miniature_figcaption">Camiguin</figcaption>
+                </div>
+                <div class="miniature">
+                    <input type="radio" name="demo" class="fen" id="place_5">
+                    <label for="place_5">
+                        <img class="photo_miniature" src="../styles/images/slider_5_chocolate_hills.jpg"
+                             alt="Chocolate Hills Philippines">
+                    </label>
+                    <img class="fenetre1" src="../styles/images/slider_5_chocolate_hills.jpg"
+                         alt="Chocolate Hills Philippines">
+                    <figcaption class="miniature_figcaption">Chocolate Hills</figcaption>
+                </div>
+                <div class="miniature">
+                    <input type="radio" name="demo" class="fen" id="place_6">
+                    <label for="place_6">
+                        <img class="photo_miniature" src="../styles/images/slider_6_corregidor.jpg"
+                             alt="Monument de guerre Corregidor Philippines">
+                    </label>
+                    <img class="fenetre2" src="../styles/images/slider_6_corregidor.jpg"
+                         alt="Monument de guerre Corregidor Philippines">
+                    <figcaption class="miniature_figcaption">Manille, Monument de guerre Corregidor</figcaption>
+                </div>
+                <div class="miniature">
+                    <input type="radio" name="demo" class="fen" id="place_7">
+                    <label for="place_7">
+                        <img class="photo_miniature" src="../styles/images/slider_7_siquijor.jpg"
+                             alt="Siquijor Island Philippines">
+                    </label>
+                    <img class="fenetre1" src="../styles/images/slider_7_siquijor.jpg"
+                         alt="Siquijor Island Philippines">
+                    <figcaption class="miniature_figcaption">Siquijor Island</figcaption>
+                </div>
+                <div class="miniature">
+                    <input type="radio" name="demo" class="fen" id="place_8">
+                    <label for="place_8">
+                        <img class="photo_miniature" src="../styles/images/slider_8_coron.jpg"
+                             alt="île de Coron Phillipines">
+                    </label>
+                    <img class="fenetre2" src="../styles/images/slider_8_coron.jpg" alt="île de Coron Phillipines">
+                    <figcaption class="miniature_figcaption">Île de Coron</figcaption>
+                </div>
+                <div class="miniature">
+                    <input type="radio" name="demo" class="fen" id="place_9">
+                    <label for="place_9">
+                        <img class="photo_miniature" src="../styles/images/slider_9_boracay.jpg"
+                             alt="Boracay Philippines">
+                    </label>
+                    <img class="fenetre1" src="../styles/images/slider_9_boracay.jpg" alt="Boracay Philippines">
+                    <figcaption class="miniature_figcaption">Boracay</figcaption>
+                </div>
+                <div class="miniature">
+                    <input type="radio" name="demo" class="fen" id="place_10">
+                    <label for="place_10">
+                        <img class="photo_miniature" src="../styles/images/slider_10_lac_taal.jpg"
+                             alt="Lac Taal Philippines">
+                    </label>
+                    <img class="fenetre2" src="../styles/images/slider_10_lac_taal.jpg" alt="Lac Taal Philippines">
+                    <figcaption class="miniature_figcaption">Lac Taal</figcaption>
+                </div>
+            </div>
+            <div class="photos_main_top">
+                <figure class="photos_main_top_1">
+                    <img src="../styles/images/slider_1_sagada.jpg" alt="Sagada">
+                    <figcaption class="photos_main_top_figcaption">Sagada, Mountain Province</figcaption>
+                </figure>
+                <figure class="photos_main_top_2">
+                    <img src="../styles/images/Slider_2_mayon.jpg" alt="Volcan Mayon Philippines">
+                    <figcaption class="photos_main_top_figcaption">Le volcan Mayon</figcaption>
+                </figure>
+                <figure class="photos_main_top_3">
+                    <img src="../styles/images/Slider_3_siargao.jpg" alt="Siargao Philippines">
+                    <figcaption class="photos_main_top_figcaption">Siargao</figcaption>
+                </figure>
+                <figure class="photos_main_top_4">
+                    <img src="../styles/images/Slider_4_camiguin.jpg" alt="Camiguin Philippines">
+                    <figcaption class="photos_main_top_figcaption">Camiguin</figcaption>
+                </figure>
+                <figure class="photos_main_top_5">
+                    <img src="../styles/images/slider_5_chocolate_hills.jpg" alt="Chocolate Hills Philippines">
+                    <figcaption class="photos_main_top_figcaption">Chocolate Hills</figcaption>
+                </figure>
+                <figure class="photos_main_top_6">
+                    <img src="../styles/images/slider_6_corregidor.jpg" alt="Monument de guerre Corregidor Philippines">
+                    <figcaption class="photos_main_top_figcaption">Manille, Monument de guerre Corregidor</figcaption>
+                </figure>
+                <figure class="photos_main_top_7">
+                    <img src="../styles/images/slider_7_siquijor.jpg" alt="Siquijor Island Philippines">
+                    <figcaption class="photos_main_top_figcaption">Siquijor Island</figcaption>
+                </figure>
+                <figure class="photos_main_top_8">
+                    <img src="../styles/images/slider_8_coron.jpg" alt="île de Coron Phillipines">
+                    <figcaption class="photos_main_top_figcaption">Île de Coron</figcaption>
+                </figure>
+                <figure class="photos_main_top_9">
+                    <img src="../styles/images/slider_9_boracay.jpg" alt="Boracay Philippines">
+                    <figcaption class="photos_main_top_figcaption">Boracay</figcaption>
+                </figure>
+                <figure class="photos_main_top_10">
+                    <img src="../styles/images/slider_10_lac_taal.jpg" alt="Lac Taal Philippines">
+                    <figcaption class="photos_main_top_figcaption">Lac Taal</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="main_mid">
+        <div class="main_mid_corps">
+            <div class="histoire_philippines">
+                <p>7107 îles forment le grand archipel des Philippines, le pays le plus occidentalisé de l’Asie.
+                    Colonisé par les espagnols pendant plus de trois siècles puis sous le contrôle des américains
+                    pendant un demi-siècle, les Philippines ont donc des influences culturelles et religieuses très
+                    diverses.</p>
+                <hr>
+                <p>Mais le charme de la perle des mers d’Orient se trouve surtout dans la beauté de ses paysages, ses
+                    plages paradisiaques et ses fonds marins. On y trouve des merveilles naturelles partout où l’on se
+                    rend et il est difficile de tout visiter d’un seul coup.</p>
+                <hr>
+                <p>Les locaux vous accueillent chaleureusement et le service auprès des touristes y est réputé. Bien que
+                    difficile d’accès depuis l’Europe, un voyage aux Philippines vous surprendra. Enfin, les adeptes de
+                    la plongée vont adorer passer des heures sous l’eau.</p>
+            </div>
+            <div class="demographie_philippines">
+                <table class="table_demographie">
+                    <thead>
+                    <tr>
+                        <th colspan="6">Démographie</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="ligne_haut">Population</td>
+                        <td class="ligne_haut">Capitale</td>
+                        <td class="ligne_haut">Langue officielle</td>
+                        <td class="ligne_haut">Monnaie</td>
+                        <td class="ligne_haut">Religion</td>
+                        <td class="ligne_haut">Décalage horaire</td>
+                    </tr>
+                    <tr>
+                        <td>109 180 815 habitants</td>
+                        <td>Manille</td>
+                        <td>Phillipin, anglais</td>
+                        <td>Le Peso philippin</td>
+                        <td>Christianisme</td>
+                        <td>6 heures d'avance (été)</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <ul class="liste_demographie_philippines">
+                    <h2>Démographie</h2>
+                    <li>Population: 109 180 815 habitants</li>
+                    <li>Capitale: Manille</li>
+                    <li>Langue officielle: Phillipin, anglais</li>
+                    <li>Monnaie: Le Peso Phillipin</li>
+                    <li>Religion: Christianisme</li>
+                    <li>Décalage horaire: 6 heures d'avance (été)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main_bot">
         <div class="activites">
-          <section class="activite_1">
-            <h2>MANILLE</h2>
-            <div class="activite_text">
-              <p>Cette grande métropole est un mixe entre le passé et le futur. Le vieux quartier préservé d’Intramuros datant du 16ème siècle contraste fortement avec le quartier chic de Makati et ses buildings qui font penser à ceux d’Amérique. Manille offre de nombreux attraits.</p>
-              <hr>
-              <p>La vie nocturne y est intense. L’aéroport très proche permet de la visiter rapidement en une journée si vous avez une courte escale.</p>
-            </div>
-          </section>
-          <section class="activite_2">
-            <h2>VIGAN</h2>
-            <div class="activite_text">
-              <p>Vigan est une ville du XVIème siècle exceptionnellement bien préservée. Vous aurez aisément l’impression de voyager dans le temps en vous promenant dans les rues de cette ancien comptoir commercial européen. Pas étonnant que Vigan soit inscrite au patrimoine de l’UNESCO !</p>
-              <hr>
-              <p>Visitez les nombreux musées d’histoire de cette ancienne ville coloniale. Les plus recommandés sont le manoir Syquia, le musée Crisologo et le musée du Padre Burgos.</p>
-              <hr>
-              <p>Vous devez essayer la cuisine Ilocano ! À commander : Vigan Longganisa, Empanada, Bagnet et Chichacorn.</p>
-            </div>
-          </section>
-          <section class="activite_3">
-            <h2>RIZIÈRES DE BATAD</h2>
-            <div class="activite_text">
-              <p>Le meilleur endroit où voir les rizières en terrasses des Ifugao, un site également classé au patrimoine de l’UNESCO. Cependant, y accéder n’est pas simple !</p>
-              <hr>
-              <p>Grimpez vers Patpat Sitio pour vous en mettre plein les yeux. Après avoir traversé un pont suspendu, monté le long des terrasses et visité une petite forêt remplie de sources et cascades, vous pourrez profiter de la meilleure vue des rizières.</p>
-              <hr>
-              <p>Allez vous baigner aux cascades Tappiya, une chute de 70m à seulement 30 minutes de Batad.</p>
-            </div>
-          </section>
+            <section class="activite_1">
+                <h2>MANILLE</h2>
+                <div class="activite_text">
+                    <p>Cette grande métropole est un mixe entre le passé et le futur. Le vieux quartier préservé
+                        d’Intramuros datant du 16ème siècle contraste fortement avec le quartier chic de Makati et ses
+                        buildings qui font penser à ceux d’Amérique. Manille offre de nombreux attraits.</p>
+                    <hr>
+                    <p>La vie nocturne y est intense. L’aéroport très proche permet de la visiter rapidement en une
+                        journée si vous avez une courte escale.</p>
+                </div>
+            </section>
+            <section class="activite_2">
+                <h2>VIGAN</h2>
+                <div class="activite_text">
+                    <p>Vigan est une ville du XVIème siècle exceptionnellement bien préservée. Vous aurez aisément
+                        l’impression de voyager dans le temps en vous promenant dans les rues de cette ancien comptoir
+                        commercial européen. Pas étonnant que Vigan soit inscrite au patrimoine de l’UNESCO !</p>
+                    <hr>
+                    <p>Visitez les nombreux musées d’histoire de cette ancienne ville coloniale. Les plus recommandés
+                        sont le manoir Syquia, le musée Crisologo et le musée du Padre Burgos.</p>
+                    <hr>
+                    <p>Vous devez essayer la cuisine Ilocano ! À commander : Vigan Longganisa, Empanada, Bagnet et
+                        Chichacorn.</p>
+                </div>
+            </section>
+            <section class="activite_3">
+                <h2>RIZIÈRES DE BATAD</h2>
+                <div class="activite_text">
+                    <p>Le meilleur endroit où voir les rizières en terrasses des Ifugao, un site également classé au
+                        patrimoine de l’UNESCO. Cependant, y accéder n’est pas simple !</p>
+                    <hr>
+                    <p>Grimpez vers Patpat Sitio pour vous en mettre plein les yeux. Après avoir traversé un pont
+                        suspendu, monté le long des terrasses et visité une petite forêt remplie de sources et cascades,
+                        vous pourrez profiter de la meilleure vue des rizières.</p>
+                    <hr>
+                    <p>Allez vous baigner aux cascades Tappiya, une chute de 70m à seulement 30 minutes de Batad.</p>
+                </div>
+            </section>
         </div>
-      </div>
-    </main>
-    <footer>
-
-    </footer>
-  </body>
+    </div>
+</main>
+<footer>
+    <div class="footer-sup">
+                <span class="footer-item">
+                    <a href="../contact.html">Nous contacter</a>
+                </span>
+        <span class="footer-item">
+                    <a href="../voyage-tab.html">Lieux visités</a>
+                </span>
+    </div>
+    Copyright© by KBC Nueve
+</footer>
+<div class="CanvasMenu">
+    <div class="menu-nav-left"></div>
+    <div class="menu-nav-right">
+        <div class="CanvasMenu-content">
+            <div class="CanvasMenu-header">
+                Menu
+                <span class="CanvasMenu-close"></span>
+            </div>
+            <div class="CanvasMenu-nav ">
+                <a href="voyages.html"><i class="far fa-home"></i> Accueil</a>
+            </div>
+            <div class="CanvasMenu-nav CanvasMenu-cat is-select">
+                <div class="CanvasMenu-titre">
+                    Prénom <span class="CanvasMenu-open"></span>
+                </div>
+                <div class="CanvasMenu-all-item">
+                    <div class="CanvasMenu-item CanvasMenu-child">
+                        <div class="CanvasMenu-child-name" >
+                            Bastien <span class="CanvasMenu-open-child"></span>
+                        </div>
+                        <div class="CanvasMenu-child-all-item">
+                            <div class="CanvasMenu-item">
+                                <a href="voyage4.html">
+                                    États-Unis
+                                </a>
+                            </div>
+                            <div class="CanvasMenu-item">
+                                <a href="voyage5.html">
+                                    Angleterre
+                                </a>
+                            </div>
+                            <div class="CanvasMenu-item">
+                                <a href="voyage6.html">
+                                    Espagne
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CanvasMenu-item  CanvasMenu-child">
+                        <div class="CanvasMenu-child-name">
+                            Kevin <span class="CanvasMenu-open-child"></span>
+                        </div>
+                        <div class="CanvasMenu-child-all-item">
+                            <div class="CanvasMenu-item">
+                                <a href="voyage2.html">
+                                    Indonésie
+                                </a>
+                            </div>
+                            <div class="CanvasMenu-item">
+                                <a href="voyage1.html">
+                                    Cuba
+                                </a>
+                            </div>
+                            <div class="CanvasMenu-item">
+                                <a href="voyage3.html">
+                                    Allemagne
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CanvasMenu-item  CanvasMenu-child active">
+                        <div class="CanvasMenu-child-name">
+                            Céline <span class="CanvasMenu-open-child"></span>
+                        </div>
+                        <div class="CanvasMenu-child-all-item"  style="display: block;">
+                            <div class="CanvasMenu-item">
+                                <a href="voyage9.html">
+                                    Nouvelle-Zélande
+                                </a>
+                            </div>
+                            <div class="CanvasMenu-item">
+                                <a href="voyage7.html">
+                                    Islande
+                                </a>
+                            </div>
+                            <div class="CanvasMenu-item is-select">
+                                <a href="voyage8.html">
+                                    Philippines
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="CanvasMenu-nav CanvasMenu-cat">
+            <div class="CanvasMenu-titre">
+                Continent <span class="CanvasMenu-open"></span>
+            </div>
+            <div class="CanvasMenu-all-item">
+                <div class="CanvasMenu-item CanvasMenu-child">
+                    <div class="CanvasMenu-child-name">
+                        Europe <span class="CanvasMenu-open-child"></span>
+                    </div>
+                    <div class="CanvasMenu-child-all-item">
+                        <div class="CanvasMenu-item">
+                            <a href="voyage5.html">
+                                Angleterre
+                            </a>
+                        </div>
+                        <div class="CanvasMenu-item">
+                            <a href="voyage6.html">
+                                Espagne
+                            </a>
+                        </div>
+                        <div class="CanvasMenu-item">
+                            <a href="voyage3.html">
+                                Allemagne
+                            </a>
+                        </div>
+                        <div class="CanvasMenu-item">
+                            <a href="voyage7.html">
+                                Islande
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="CanvasMenu-item  CanvasMenu-child active">
+                    <div class="CanvasMenu-child-name">
+                        Asie <span class="CanvasMenu-open-child"></span>
+                    </div>
+                    <div class="CanvasMenu-child-all-item" style="display: block;">
+                        <div class="CanvasMenu-ite">
+                            <a href="voyage2.html">
+                                Indonésie
+                            </a>
+                        </div>
+                        <div class="CanvasMenu-item is-select">
+                            <a href="voyage8.html">
+                                Philippines
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="CanvasMenu-item  CanvasMenu-child">
+                    <div class="CanvasMenu-child-name">
+                        Océanie <span class="CanvasMenu-open-child"></span>
+                    </div>
+                    <div class="CanvasMenu-child-all-item">
+                        <div class="CanvasMenu-item">
+                            <a href="voyage9.html">
+                                Nouvelle-Zélande
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="CanvasMenu-item  CanvasMenu-child">
+                    <div class="CanvasMenu-child-name">
+                        Amérique <span class="CanvasMenu-open-child"></span>
+                    </div>
+                    <div class="CanvasMenu-child-all-item">
+                        <div class="CanvasMenu-item">
+                            <a href="voyage4.html">
+                                États-Unis (Amérique)
+                            </a>
+                        </div>
+                        <div class="CanvasMenu-item">
+                            <a href="voyage1.html">
+                                Cuba
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
 </html>
