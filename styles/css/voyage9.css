@@ -1,3 +1,7 @@
+:root{
+    --color-one : #39569E;
+}
+
 html, body {
     margin: 0;
     padding: 0;

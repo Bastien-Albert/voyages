@@ -1,5 +1,7 @@
 /* PAGE 7 ISLANDE */
-
+:root{
+    --color-one : #235A25;
+}
 .html-islande, .body-islande {
     margin: 0;
     padding: 0;
